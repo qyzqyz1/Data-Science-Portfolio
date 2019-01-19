@@ -12,7 +12,12 @@ Furthermore, a mini-poster was created in pdf format to present our findings to 
 - **Miniposter.ipynb**: R scripts in ipynb format
 
 ## Package Requirements:
-To successfully run the R script, you need to install the following packages in R first by running `install.packages("package_name")`:
+To successfully run the R script, you need to first install the following packages in R by running `install.packages("package_name")`:
 - **plotrix** package: Contains lots of plots, various labeling, axis and color scaling functions.
 - **rworldmap** package: Enables mapping of country level and gridded user datasets.
 
+## Exercised Skills:
+- Data Cleaning
+- Dataframe Manipulation
+- Data Visualization
+- Storytelling
