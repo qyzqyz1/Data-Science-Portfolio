@@ -20,5 +20,4 @@ To successfully run the R script, you need to first install the following packag
 - Data Cleaning
 - Data Manipulation
 - Data Visualization
-- Data Analytics
 - Storytelling
