@@ -16,8 +16,9 @@ To successfully run the R script, you need to first install the following packag
 - **plotrix** package: Contains lots of plots, various labeling, axis and color scaling functions.
 - **rworldmap** package: Enables mapping of country level and gridded user datasets.
 
-## Exercised Skills:
+## Practiced Skills:
 - Data Cleaning
-- Dataframe Manipulation
+- Data Manipulation
 - Data Visualization
+- Data Analytics
 - Storytelling
