@@ -1,1 +1,1 @@
-# Visualization (Mini)Projects in R
+# Visualization Projects in R
