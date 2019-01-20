@@ -22,7 +22,7 @@
 - **Other files in the main folder**: individual python package files from the areaCalculator folder. They are placed here to be accessible by Travis CI. 
 
 ## Practiced Skills:
-- Building python package (with subpackages and inheritance)
+- Building python package (with subpackages and inheritance structure)
 - Creating unit testing classes
 - Integrating try-except statements into unit testing
 - Checking coverage reports
