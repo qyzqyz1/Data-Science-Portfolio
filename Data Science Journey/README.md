@@ -1,2 +1,1 @@
-# Professional Development
-## My Data Science Learning Journey
+# My Data Science Learning Journey
