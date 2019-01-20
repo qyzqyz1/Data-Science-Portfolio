@@ -21,5 +21,5 @@
 - Building Python Package (with subpackages and inheritance)
 - Creating Unit Testing Classes
 - Integrating try-except statements into unit testing
-- Checking coverage report
+- Checking coverage reports
 - Continuous Integration on Travis
