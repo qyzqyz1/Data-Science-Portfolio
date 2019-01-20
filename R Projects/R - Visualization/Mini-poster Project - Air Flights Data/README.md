@@ -1,4 +1,4 @@
-# Mini-Poster Project for Air Flights Data 
+# Mini-Poster Project for American Flights Data (R)
 
 ## Project Overview
 This repository contains code  and datasets for analyzing the delay situation associated with American airlines in the year 2008. A specific focus was given to the U.S. Airway company and four different types of charts were created to visualize the delay conditions with respect to months and airport locations.
@@ -17,7 +17,7 @@ To successfully run the R script, you need to first install the following packag
 - **plotrix** package: Contains lots of plots, various labeling, axis and color scaling functions.
 - **rworldmap** package: Enables mapping of country level and gridded user datasets.
 
-## Practiced Skills in R
+## Practiced Skills
 - Data Cleaning
 - Data Manipulation
 - Data Visualization
