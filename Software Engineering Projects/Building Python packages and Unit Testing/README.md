@@ -12,3 +12,7 @@
 ## Travis Status:
 [![Build Status](https://travis-ci.org/qyzqyz1/DATA-533-lab-4-Tom-Jimmy-.svg?branch=jimmy)](https://travis-ci.org/qyzqyz1/DATA-533-lab-4-Tom-Jimmy-)
 
+## File Descriptions
+- **Coverage_Report**: contains screen shots showing that 100% coverage has been achieved for our testing codes
+- **areaCalculator**: contains python package codes for calculating areas of various shapes based on user inputs
+- **Other files in the main folder**: individual python package files from the areaCalculator folder. They are placed here to be accessible by Travis CI. 
