@@ -38,18 +38,18 @@ The ellipse module has similar structure to the rectangle module except that the
 
 A user-interactive python test file is provided to allow specifying the type of the shape which directly corresponds to the modules/classes for the calculation. By executing the test file, the user is required to input the name of the shape until "quit" command is provided:
 
-r: Rectangle 
+- r: Rectangle 
 
-c: Circle 
+- c: Circle 
 
-e: Ellipse 
+- e: Ellipse 
 
-rp: Regular Polygon 
+- rp: Regular Polygon 
 
-t: Trapezoid 
+- t: Trapezoid 
 
-tr: Triangle 
+- tr: Triangle 
 
-q: Quit
+- q: Quit
 
 
