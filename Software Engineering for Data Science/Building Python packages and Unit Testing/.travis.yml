@@ -1,0 +1,10 @@
+language: python
+python:
+  - "3.3"
+  
+script: 
+  - python test_circle.py < testing_circle.txt
+  - python test_ellipse.py < testing_ellipse.txt
+  - python test_rectangle.py < test_rectangle.txt
+  - python test_trapezoid.py < test_trapezoid.txt
+
