@@ -16,3 +16,10 @@
 - **Coverage_Report**: contains screen shots showing that 100% coverage has been achieved for our testing codes
 - **areaCalculator**: contains python package codes for calculating areas of various shapes based on user inputs
 - **Other files in the main folder**: individual python package files from the areaCalculator folder. They are placed here to be accessible by Travis CI. 
+
+## Practiced Skills:
+- Building Python Package (with subpackages and inheritance)
+- Creating Unit Testing Classes
+- Integrating try-except statements into unit testing
+- Checking coverage report
+- Continuous Integration on Travis
