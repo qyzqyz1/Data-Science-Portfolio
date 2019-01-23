@@ -1,7 +1,7 @@
 # Exploratory Analysis Project for 911 Calls Data (Python)
 
 ## Project Overview
-This repository contains code  and dataset for analyzing the 911 Call data from [Kaggle]("https://www.kaggle.com/mchirico/montcoalert")
+This repository contains code  and dataset for analyzing the 911 Call data from [Kaggle](https://www.kaggle.com/mchirico/montcoalert)
 
 ## File Descriptions
 - **data_sets**: contains partial datasets for the American flights and airports information in the year 2008. The complete *air.csv* file can be downloaded from: http://rtricks4kids.ok.ubc.ca/wjbraun/DS550/air.csv
