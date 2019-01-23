@@ -1,7 +1,7 @@
 # Mini-Poster Project for American Flights Data (R)
 
 ## Project Overview
-This repository contains code  and datasets for analyzing the delay situation associated with the American airlines in the year 2008. A specific focus was given to the U.S. Airway company, and four different types of charts were created to visualize the delay conditions with respect to months and airport locations. In addition, a shiny app was made for the last map plot, which allows users to input their customized delay levels and visualize the flight routes correspond to that level.
+This repository contains code  and datasets for analyzing the delay situation associated with the American airlines in the year 2008. A specific focus was given to the U.S. Airway company, and four different types of charts were created to visualize the delay conditions with respect to months and airport locations. Furthermore, a shiny app was also made for the last map plot, which allows users to input their customized delay levels and visualize the flight routes correspond to that level and the output will change instantly as user modify their input values.
 
 Furthermore, a mini-poster was created in pdf format to present our findings to the general public who would be interested to know some general insights about the delays occured for the U.S. Airway in 2008.
 
