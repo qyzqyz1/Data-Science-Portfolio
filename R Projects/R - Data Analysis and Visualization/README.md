@@ -1,1 +1,1 @@
-# Visualization Projects in R
+# Data Analysis and Visualization Projects in R
