@@ -8,7 +8,7 @@ Furthermore, a mini-poster was created in pdf format to present our findings to 
 ## File Descriptions
 - **data_sets**: contains partial datasets for the American flights and airports information in the year 2008. The complete *air.csv* file can be downloaded from: http://rtricks4kids.ok.ubc.ca/wjbraun/DS550/air.csv
 - **outputs**: contains four different types of baisc plots created through R
-- **shiny**: contains a shiny app made for the map plot that shows the extreme delay conditions and its corresponding flight routes
+- **shiny**: contains a shiny app made for the map plot showing the extreme delay conditions and its corresponding flight routes
 - **Final_Poster.pdf**: mini-poster in pdf format that is used to present our findings
 - **Miniposter.r**: R scripts in R format
 - **Miniposter.ipynb**: R scripts in ipynb format
