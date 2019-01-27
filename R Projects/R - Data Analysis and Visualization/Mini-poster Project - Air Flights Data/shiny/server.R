@@ -1,3 +1,9 @@
+setwd('C:/Users/yizhe/Desktop/data_550/miniposter/')
+air <- read.csv("air.csv")
+source("airports.R")
+source("cancellations.R")
+source("FlightBehaviour.R")
+
 server <-
 function(input,output){
     output$main_plot <- renderPlot({
@@ -8,6 +14,54 @@ function(input,output){
       u_delay <- as.numeric(input$upper_delay)
       mi_delay <- as.numeric(input$mini_delay)
       title <- input$title
+      
+      # Subset to obtains the US airline flight data
+      US <- subset(air, UniqueCarrier == 'US')
+
+      
+      # Drop NA values in the dataset
+      US_NNA <- US[complete.cases(US[ , c("ArrDelay","DepDelay","CarrierDelay","WeatherDelay","NASDelay","SecurityDelay","LateAircraftDelay")]), ]
+
+      
+      # Exploring dataset
+      ori_name <- unique(US_NNA$Origin)
+      dest_name <- unique(US_NNA$Dest)
+      
+      # Adding latitude and longitude information from the airport.R dataframe to our air dataframe
+      listofdfs <- list()
+      for(item in ori_name){
+        latOrigin <- subset(airports,iata_code==item)['latitude_deg'][1,]
+        longOrigin <- subset(airports,iata_code==item)['longitude_deg'][1,]
+        s <- subset(US_NNA, Origin==item)
+        s$latOrigin <- latOrigin
+        s$longOrigin <- longOrigin
+        listofdfs[[item]] <- s
+      }
+      
+      
+      US_NNA <- do.call("rbind", listofdfs)
+      
+      listofdfs <- list()
+      for(item in dest_name){
+        latDest <- subset(airports,iata_code==item)['latitude_deg'][1,]
+        longDest <- subset(airports,iata_code==item)['longitude_deg'][1,]
+        s <- subset(US_NNA, Dest==item)
+        s$latDest <- latDest
+        s$longDest <- longDest
+        listofdfs[[item]] <- s
+      }
+      US_NNA <- do.call("rbind", listofdfs)
+      
+      # Adding US airline visits at each airport to the airport.R dataframe
+      c <- as.data.frame(table(US_NNA$Dest))
+      d <- as.data.frame(table(US_NNA$Origin))
+      df <- merge(c,d,by="Var1",all=TRUE)
+      df$US_visits <- df$Freq.x + df$Freq.y
+      colnames(df)[1] <- c("iata_code")
+
+      
+      airports <- merge(x=airports,y=df,by='iata_code',all.x=TRUE)
+
       
       colfunc <- colorRampPalette(c("green","red"))
       library(rworldmap)
