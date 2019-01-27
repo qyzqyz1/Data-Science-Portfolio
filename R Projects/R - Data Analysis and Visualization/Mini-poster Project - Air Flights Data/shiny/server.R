@@ -1,4 +1,4 @@
-setwd('C:/Users/yizhe/Desktop/data_550/miniposter/')
+
 air <- read.csv("air.csv")
 source("airports.R")
 source("cancellations.R")
