@@ -7,20 +7,20 @@ A predictive model was built on the [2016-17 NBA Player Status Dataset](https://
 The training model experiment can be viewed on my Azure AI Gallery [here](https://gallery.azure.ai/Experiment/Machine-Learning-Model-NBA-Data-Set), while the predictive model experiment can be viewed [there](https://gallery.cortanaintelligence.com/Experiment/Predictive-Model-NBA-Data-Set)
 
 ## Main Steps:
-- **Importing Data set**
-- **Join Data Frames**: join data frames on their common characteristics
-- **Preprocess Text**: remove player names with special characters
-- **Edit Metadata**: replaced acronym column names with the more descriptive ones
-- **Apply SQL Transformation**: Use SQL statement to avoid duplicates and keep things simple, by assigning the clean value of the player name to the Player column, and also deleting all the header rows that we can find between data rows
-- **Edit Metadata**: make sure columns with numeric values are in integer or floating point types
-- **Clean Missing Data**: replaced missing values with the mean value in their columns
-- **Select Columns in Data set**
-- **Clip Values**: clip the values for the feature I want to predict (in this case, the PER - Player Efficiency Rating)
-- **Split Data**: split the data into training and testing sets
-- **Train Model**: trained the model using two different algorithms (linear & neural network) at the same time to compare them
-- **Score Model**: evaluate the each of the trained model by scoring them with the testing dataset
-- **Evaluate Model**: gain more empirical insights about the performance of the model and visualize the performance reports
-- **Predictive Experiment**: use the trained model to build predictive experiment for future predictions
+- **_Import Data set_**
+- **_Join Data Frames_**: join data frames on their common characteristics
+- **_Preprocess Text_**: remove player names with special characters
+- **_Edit Metadata_**: replace acronym column names with the more descriptive ones
+- **_Apply SQL Transformation_**: Use SQL statement to avoid duplicates and keep things simple, by assigning the clean value of the player name to the Player column, and also deleting all the header rows that we can find between data rows
+- **_Edit Metadata_**: make sure columns with numeric values are in integer or floating point types
+- **_Clean Missing Data_**: replace missing values with the mean value in their columns
+- **_Select Columns in Data set_**
+- **_Clip Values_**: clip the values for the feature I want to predict (in this case, the PER - Player Efficiency Rating)
+- **_Split Data_**: split the data into training and testing sets
+- **_Train Model_**: train the model using two different algorithms (linear & neural network) at the same time to compare them
+- **_Score Model_**: evaluate the each of the trained model by scoring them with the testing dataset
+- **_Evaluate Model_**: gain more empirical insights about the performance of the model and visualize the performance reports
+- **_Predictive Experiment_**: use the trained model to build predictive experiment for future predictions
 
 ## Practiced Skills:
 - Microsoft Azure Machine Learning Studio
