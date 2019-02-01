@@ -3,7 +3,7 @@
 ## Project Description
 A predictive model was built on the 2016-17 NBA Player Status Data Set ([link](https://www.basketball-reference.com/leagues/NBA_2017_advanced.html)) on Azure. In order to get the best results out of my experiment, I first prepared and cleaned the data using some of the built-in modules of Azure ML, and then compared the performances of two different machine learning alogrithms on my training data set. Based upon my trained model, a predictive experiment was further conducted for future predictions.
 
-## Main Steps Followed:
+## Main Steps:
 - **Importing Data set**
 - **Join Data Frames**: join data frames on their common characteristics
 - **Preprocess Text**: remove player names with special characters
@@ -19,6 +19,12 @@ A predictive model was built on the 2016-17 NBA Player Status Data Set ([link](h
 - **Evaluate Model**: gain more empirical insights about the performance of the model and visualize the performance reports
 - **Predictive Experiment**: use the trained model to build predictive experiment for future predictions
 
-## Links to Azure AI Gallery
+## Link to Azure AI Gallery
 The training model experiment can be viewed on my Azure AI Gallery [here](https://gallery.azure.ai/Experiment/Machine-Learning-Model-NBA-Data-Set), while the predictive model experiment can be viewed [there](https://gallery.cortanaintelligence.com/Experiment/Predictive-Model-NBA-Data-Set)
+
+## Practiced Skills:
+- Microsoft Azure Machine Learning Studio
+- Data Cleaning
+- Data Manipulation
+- Building Machine Learning Model
 
