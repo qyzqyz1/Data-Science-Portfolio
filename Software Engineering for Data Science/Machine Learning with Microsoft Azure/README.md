@@ -1,7 +1,7 @@
 # Building a Predictive Model with Microsoft Azure
 
 ## Project Description
-A predictive model was built on the 2016-17 NBA Player Status Data Set [[link](https://www.basketball-reference.com/leagues/NBA_2017_advanced.html)] on Azure. In order to get the best results out of my experiment, I first prepared and cleaned the data using some of the built-in modules of Azure ML, and then compared the performances of two different machine learning alogrithms on my training data set. Based upon my trained model, a predictive experiment was further conducted for future predictions.
+A predictive model was built on the 2016-17 NBA Player Status Data Set ([link](https://www.basketball-reference.com/leagues/NBA_2017_advanced.html)) on Azure. In order to get the best results out of my experiment, I first prepared and cleaned the data using some of the built-in modules of Azure ML, and then compared the performances of two different machine learning alogrithms on my training data set. Based upon my trained model, a predictive experiment was further conducted for future predictions.
 
 ## Main Steps Followed:
 - **Importing Data set**
