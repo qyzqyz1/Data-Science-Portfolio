@@ -13,7 +13,7 @@ The machine learning experiments I have created can be viewed on my Azure AI Gal
 - **_Join Data Frames_**: join data frames on their common characteristics
 - **_Preprocess Text_**: remove player names with special characters
 - **_Edit Metadata_**: replace acronym column names with the more descriptive ones
-- **_Apply SQL Transformation_**: Use SQL statement to avoid duplicates and keep things simple, by assigning the clean value of the player name to the Player column, and also deleting all the header rows that we can find between data rows
+- **_Apply SQL Transformation_**: use SQL statement to avoid duplicates and keep things simple, by assigning the clean value of the player name to the Player column, and also deleting all the header rows that we can find between data rows
 - **_Edit Metadata_**: make sure columns with numeric values are in integer or floating point types
 - **_Clean Missing Data_**: replace missing values with the mean value in their columns
 - **_Select Columns in Data set_**: select the features of interest
