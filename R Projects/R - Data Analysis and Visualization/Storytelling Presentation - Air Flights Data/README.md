@@ -3,6 +3,8 @@
 ## Project Overview
 Analyzed the 2008 American Airlines dataset and self-developed an interesting topic for storytelling and presentation purpose. Since flights can be delayed by weather, but it is hard to tell which airports are responsible for those delays if just by simply looking at the flight information. That is, were the extreme weather conditions occuring at the destination airports or at the departure airports? To answer this, a data analysis has been conduted in R and visualization plots were also made to give the auidence an intuition of where were the bad weathers on a given date.
 
+Furthermore, a shiny app was developed for a more versatile demonstration purpose. A short version of my story explained with sample outputs from shiny app can be read here.
+
 ## File Descriptions
 - **data_sets**: contains summary datasets for the American flights and airports information in the year 2008, while the complete *air.csv* file was used in the analysis and can be [downloaded Here](http://rtricks4kids.ok.ubc.ca/wjbraun/DS550/air.csv). **Note**: this is a huge dataset (755MB, 7001975rows x 29cols) and will take a few minutes to download
 - **shiny**: contains a shiny app made for displaying two plots:
@@ -10,18 +12,18 @@ Analyzed the 2008 American Airlines dataset and self-developed an interesting to
     - A barplot showingt the top outstanding weather-delayed airports in a specified month
     
     **Note**: in order to use the shiny app, you will need to download the *air.csv* file first, and place that file to your current R working directory.
-- **Final_Poster.pdf**: mini-poster in pdf format that is used to present our findings
-- **Miniposter.r**: R scripts in R format
-- **Miniposter.ipynb**: R scripts in ipynb format
+- **shiny outputs**: contains sample outputs from the shiny app
+- **Presentation Slides.pdf**: presentation slides in pdf format that is used for storytelling my findings
+- **Storytelling.r**: data analysis R scripts in .R format
+- **Storytelling.ipynb**: data analysis R scripts in .ipynb format
 
 ## Package Requirements
 To successfully run the R script, you need to first install the following packages in R by running `install.packages("package_name")`:
-- **plotrix** package: Contains lots of plots, various labeling, axis and color scaling functions.
 - **rworldmap** package: Enables mapping of country level and gridded user datasets.
 
 ## Practiced Skills
+- R-Shiny
+- Storytelling/Presentation
 - Data Cleaning
 - Data Manipulation
 - Data Visualization
-- R-Shiny
-- Storytelling/Presentation
