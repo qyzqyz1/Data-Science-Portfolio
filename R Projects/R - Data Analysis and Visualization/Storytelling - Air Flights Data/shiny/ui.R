@@ -26,10 +26,13 @@ ui <- fluidPage(
     sidebarLayout(
     sidebarPanel(
     img(src = "worst.jpg", height = 72, width = 220),
-    helpText("Select a particular month to visualize the top 8 most weather-delayed
+    helpText("Select a particular month to visualize the top most weather-delayed
              U.S. airports for the month"),
     sliderInput("user_month2", label="Select a month",
-                min = 1, max = 12, step = 1, value=12)
+                min = 1, max = 12, step = 1, value=12),
+    radioButtons("user_top", label=("How many to show?"),
+                 choiceNames = list("8","9","10"),
+                 choiceValues = list(8,9,10))
     ),
     mainPanel(
       plotOutput("bar_plot")
@@ -37,7 +40,8 @@ ui <- fluidPage(
     )
     )
   )
-  )
+)
+
 
 
 

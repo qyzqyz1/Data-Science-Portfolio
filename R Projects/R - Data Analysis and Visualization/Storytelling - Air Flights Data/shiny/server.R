@@ -101,7 +101,7 @@ function(input,output){
       plot(latitude_deg ~ longitude_deg, data = airports_plot,
            cex=sqrt(mean_delay)/1.2, ylim=c(21, 50), xlim=c(-125, -65), axes=FALSE, xlab="", ylab="", col="red") 
       
-      title(map_title)
+      title("Weather Delay Conditions vs. Airports")
       
       
       
@@ -126,6 +126,7 @@ function(input,output){
     
     output$bar_plot <- renderPlot({
       month <- as.numeric(input$user_month2)
+      top <- as.numeric(input$user_top)
       # Compute the weather dealyed frequency 
       counts <- list()
       winter_day <- subset(air, Month==month)
@@ -205,12 +206,12 @@ function(input,output){
       colfunc <- colorRampPalette(c("purple", "violet"))
       
       
-      xx <- barplot(head(sort(data,decreasing = TRUE),8), cex.names=1,
-                    col=colfunc(8), ylab='Weather-Delay Frequency in December', xlab='Airport Code', ylim=c(0,31))
+      xx <- barplot(head(sort(data,decreasing = TRUE),top), cex.names=1,
+                    col=colfunc(top), ylab='Weather-Delay Frequency in December', xlab='Airport Code', ylim=c(0,31))
 
-      y <- head(sort(data,decreasing = TRUE),8)
+      y <- head(sort(data,decreasing = TRUE),top)
       
-      title('Fig2: Top 8 Weather-Delayed Airports in December?', cex = 1.5,   font.main= 2, line=-0.2)
+      title('Fig2: Top Weather-Delayed Airports in the Month', cex = 1.5,   font.main= 2, line=-0.2)
       
     }
       )
