@@ -1,1 +1,1 @@
-# Professional Development (On The Go!)
+# Professional Development (on the go!)
