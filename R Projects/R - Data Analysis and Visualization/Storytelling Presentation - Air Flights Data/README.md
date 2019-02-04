@@ -6,12 +6,12 @@ Analyzed the 2008 American Airlines dataset and self-developed an interesting to
 Furthermore, a shiny app was developed for a more versatile demonstration purpose. A short version of my story explained with sample outputs from shiny app can be read here.
 
 ## File Descriptions
-- **data_sets**: contains summary datasets for the American flights and airports information in the year 2008, while the complete *air.csv* file was used in the analysis and can be [downloaded Here](http://rtricks4kids.ok.ubc.ca/wjbraun/DS550/air.csv). **Note**: this is a huge dataset (755MB, 7001975rows x 29cols) and will take a few minutes to download
+- **data_sets**: contains summary datasets for the American flights and airports information in the year 2008, while the complete *air.csv* file was used in the analysis and can be [downloaded here](http://rtricks4kids.ok.ubc.ca/wjbraun/DS550/air.csv). **Note**: this is a huge dataset (755MB, 7001975rows x 29cols) and will take a few minutes to download
 - **shiny**: contains a shiny app made for displaying two plots:
     - A map plot showing the weather delay conditions vs. airports on a user defined date
     - A barplot showingt the top outstanding weather-delayed airports in a specified month
     
-    **Note**: in order to use the shiny app, you will need to download the *air.csv* file first, and place that file to your current R working directory.
+    *_Note_*: in order to use the shiny app, you will need to download the *air.csv* file first, and place that file to your current R working directory.
 - **shiny outputs**: contains sample outputs from the shiny app
 - **Presentation Slides.pdf**: presentation slides in pdf format that is used for storytelling my findings
 - **Storytelling.r**: data analysis R scripts in .R format
