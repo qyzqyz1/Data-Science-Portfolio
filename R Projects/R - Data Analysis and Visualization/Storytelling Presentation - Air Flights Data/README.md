@@ -8,6 +8,7 @@ Analyzed the 2008 American Airlines dataset and self-developed an interesting to
 - **shiny**: contains a shiny app made for displaying two plots:
     - A map plot showing the weather delay conditions vs. airports on a user defined date
     - A barplot showingt the top outstanding weather-delayed airports in a specified month
+    
     **Note**: in order to use the shiny app, you will need to download the *air.csv* file first, and place that file to your current R working directory.
 - **Final_Poster.pdf**: mini-poster in pdf format that is used to present our findings
 - **Miniposter.r**: R scripts in R format
