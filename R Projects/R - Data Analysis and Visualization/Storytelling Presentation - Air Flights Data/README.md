@@ -3,7 +3,7 @@
 ## Project Overview
 Analyzed the 2008 American Airlines dataset and self-developed an interesting topic for storytelling and presentation purpose. Since flights can be delayed by weather, but it is hard to tell which airports are responsible for those delays if just by simply looking at the flight information. That is, were the extreme weather conditions occuring at the destination airports or at the departure airports? To answer this, a data analysis has been conduted in R and visualization plots were also made to give the auidence an intuition of where were the bad weathers on a given date.
 
-Furthermore, a shiny app was developed for a more versatile demonstration purpose. A short version of my story explained with sample outputs from shiny app can be read here.
+Furthermore, a shiny app was developed for a more versatile demonstration purpose. A short explanation for the sample outputs from shiny app can be read here.
 
 ## File Descriptions
 - **data_sets**: contains summary datasets for the American flights and airports information in the year 2008, while the complete *air.csv* file was used in the analysis and can be [downloaded here](http://rtricks4kids.ok.ubc.ca/wjbraun/DS550/air.csv). **Note**: this is a huge dataset (755MB, 7001975rows x 29cols) and will take a few minutes to download
@@ -24,6 +24,6 @@ To successfully run the R script, you need to first install the following packag
 ## Practiced Skills
 - R-Shiny
 - Storytelling/Presentation
+- Data Visualization
 - Data Cleaning
 - Data Manipulation
-- Data Visualization
