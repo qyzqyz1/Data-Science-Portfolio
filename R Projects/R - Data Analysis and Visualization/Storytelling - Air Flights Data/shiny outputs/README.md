@@ -1,0 +1,8 @@
+# Example Description of Shiny Outputs
+This shiny app contains two seperate plots, the first one illustrates the weather delay conditions vs. airports for a given date. 
+### Ex1: on December 25, 2008 (severe-delay cutoff at 90)
+![12-25](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20-%20Air%20Flights%20Data/shiny%20outputs/output1.PNG)
+### Ex2: on August 10, 2008 (sever-delay cutoff at 120)
+![8-10](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20-%20Air%20Flights%20Data/shiny%20outputs/output3.PNG)
+As you can see from the plot, the airports with more lines converging to them are more likely to be problematic as there are more weather delayed flights associated with those airprots. The text size of the airport code represents the number of total weather delayed flight routes that are related to that airport (i.e. either those flights were heading to or departing from that airport), and the larger the text size, the more confident we can say that this airport is problematic. Whereas the red circle size represents the average weather delay amount per flight would experience at that airport, the larger the red circle, the more average delay and therefore the worse the weather could be at that location. Therefore, for the above two plots, the most outstanding weather delayed airports for December 25 are: SLC, ORD, SEA, LAS and DEN, while for August 10, the worst airports are: BOS, PHL, ATL and DEN. The general condition for the country on Dec 25 was west part worse than the east part, whereas on Aug 10, the upper east part was clearly having extreme weather problems.
+
