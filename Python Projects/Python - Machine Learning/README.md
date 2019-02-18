@@ -4,3 +4,6 @@
   
 - Machine Learning Reference Reading:  
   https://brilliant.org/wiki/machine-learning/#techniques-in-machine-learning
+  
+- Machine Learning Tutorial:  
+  https://data-flair.training/blogs/gradient-boosting-algorithm/
