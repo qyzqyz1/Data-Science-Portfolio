@@ -9,11 +9,11 @@ CharityML is a fictitious charity organization located in the heart of Silicon V
 In this project, I have applied supervised learning techniques and an analytical mind on data collected for the U.S. census to help CharityML (a fictitious charity organization) identify people most likely to donate to their cause. I first explored the data to learn the main features of concern in this dataset. Next, I applied a series of transformations and preprocessing techniques to manipulate the data into a workable format. I then proposed several potential supervised learning algorithms that I believe would be suitable for this situation, and trained those models on the training dataset to find out the best possible solution. Moreover, I further optimized the chosen model through parameter tuning via grid search method and presented my findings to CharityML with detailed explanation. Finally, I tested variable selection methods and explored the performance difference between a model using all features and a model with only a subset of the key features.
 
 ## Practiced Skills
-- Data Transformation and Preprocessing 
+- Data Transformation and Preprocessing
 - Identifying Potential Learning Algorithms and Conducting their Implementations
 - Evaluating Model Performances and Selecting the Best Model
 - Describing the Chosen Model in Layman's Terms to the Non-technical Audience 
-- Further Optimizing Model via Parameters Tuning
+- Further Optimizing Model via Parameters Tuning using Grid Search
 - Extracting Feature Importance to Carry out Feature Selection
 
 ## Install
