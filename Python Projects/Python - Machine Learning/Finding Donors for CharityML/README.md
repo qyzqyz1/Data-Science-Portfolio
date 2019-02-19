@@ -1,4 +1,5 @@
-# Supervised Learning Project: Finding Donors for CharityML
+# Supervised Learning: 
+# Project - Finding Donors for CharityML
 
 ## Project Description
 About CharityML Project  
