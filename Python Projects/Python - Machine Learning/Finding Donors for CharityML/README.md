@@ -12,7 +12,7 @@ In this project, I have applied supervised learning techniques and an analytical
 - Identifying Potential Learning Algorithms and Conducting Implementations
 - Evaluating Model Performances and Selecting the Best Model
 - Further Optimizing Model via Parameters Tuning
-- Extracting Feature Importance to Carry Out Feature Selection
+- Extracting Feature Importance to Carry out Feature Selection
 
 ## Install
 
