@@ -2,10 +2,10 @@
 # Project - Finding Donors for CharityML
 
 ## Project Description
-About CharityML Project  
+**_About CharityML Project_**  
 CharityML is a fictitious charity organization located in the heart of Silicon Valley that was established to provide financial support for people eager to learn machine learning. After nearly 32,000 letters sent to people in the community, CharityML determined that every donation they received came from someone that was making more than $50,000 annually. To expand their potential donor base, CharityML has decided to send letters to residents of California, but to only those most likely to donate to the charity. With nearly 15 million working Californians, CharityML has brought us on board to help build an algorithm to best identify potential donors and reduce overhead cost of sending mail. Our goal will be evaluate and optimize several different supervised learners to determine which algorithm will provide the highest donation yield while also reducing the total number of letters being sent.
 
-What needs to be done  
+**_What needs to be done_**  
 In this project, I have applied supervised learning techniques and an analytical mind on data collected for the U.S. census to help CharityML (a fictitious charity organization) identify people most likely to donate to their cause. I first explored the data to learn the main features of concern in this dataset. Next, I applied a series of transformations and preprocessing techniques to manipulate the data into a workable format. I then proposed several potential supervised learning algorithms that I believe would be suitable for this situation, and trained those models on the training dataset to find out the best possible solution. Moreover, I further optimized the chosen model through parameter tuning via grid search method and presented my findings to CharityML with detailed explanation. Finally, I tested variable selection methods and explored the performance difference between a model using all features and a model with only a subset of the key features.
 
 ## Practiced Skills
