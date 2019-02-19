@@ -9,7 +9,7 @@ In this project, I have applied supervised learning techniques and an analytical
 
 ## Practiced Skills
 - Data Transformation and Preprocessing
-- Identifying Potential Learning Algorithms and Conducting Implementations
+- Identifying Potential Learning Algorithms and Conducting their Implementations
 - Evaluating Model Performances and Selecting the Best Model
 - Further Optimizing Model via Parameters Tuning
 - Extracting Feature Importance to Carry out Feature Selection
