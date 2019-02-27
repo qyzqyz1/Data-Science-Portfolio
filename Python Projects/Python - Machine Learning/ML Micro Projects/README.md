@@ -1,4 +1,4 @@
-## Python Micro Projects: 
+## Python Micro Projects
 
 - [ML with Linear Regression](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Machine%20Learning%20with%20Linear%20Regression.ipynb): Applied Linear Regression to determine whether the company's mobile app or its website would bring greater profits in the future. 
 - [ML with Logistic Regression](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Machine%20Learning%20with%20Logistic%20Regression.ipynb): Applied Logistic Regression to predict whether an internet user would click an ad or not.
