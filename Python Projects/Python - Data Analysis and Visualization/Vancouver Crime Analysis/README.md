@@ -6,7 +6,8 @@ In this project, I explored Vancouver's public crime dataset from [this link](ht
 Specifically, I created the following plots to answer the corresponding question which I see appropriate:
   - Network Graph (*_Python_*): illustrates what major crimes each neighborhood is facing
   - Geographical Graph (*_Plotly/Python_*): demonstrates where each type of crime tends to occur
-  - Time Series Graph (*_Plotly/Python_*): shows how various crimes change over time  
+  - Time Series Graph (*_Plotly/Python_*): shows how various crimes change over time 
+  
 Since most of my plots are made with Plotly in Python, for a better visual experience please checkout my [Presentation Slides Here](https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/).
 
 ## File Description:
