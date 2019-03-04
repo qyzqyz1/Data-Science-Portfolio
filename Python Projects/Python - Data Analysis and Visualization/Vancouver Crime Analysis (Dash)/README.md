@@ -1,4 +1,4 @@
-# Vancouver Crime Data Analysis
+# Vancouver Crime Data Analysis (Dash)
 
 ## Project Description
 In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find similarities among crime occurrences in terms of their time, type and location. I came up with some analytical questions to start with and then developed a set of visualizations to address them.
