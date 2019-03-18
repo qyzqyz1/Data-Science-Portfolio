@@ -1,7 +1,7 @@
 # Vancouver Crime Data Analysis (Plotly/Python)
 
 ## Project Description
-In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find similarities among crime occurrences in terms of their time, type and location. I came up with some analytical questions to start with and then developed a set of visualizations to address them.
+In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find similarities among crime occurrences in terms of their type, geo-location and time. I came up with some analytical questions to start with and then developed a set of visualizations to address them.
 
 Specifically, I created the following plots to answer the corresponding question which I see appropriate:
   - Network Graph (*_Python_*): illustrates what major crimes each neighborhood is facing
