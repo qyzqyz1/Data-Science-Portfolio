@@ -6,7 +6,7 @@ In this project, I explored Vancouver's public crime dataset from [this link](ht
 - **To view the dashboard online**, please check the link below:  
 [Dashboard for Vancouver Crime EDA: https://vancouver-crime-dashboard-app.herokuapp.com/](https://vancouver-crime-dashboard-app.herokuapp.com/).
 
-- **To view the dashboard locally**, please clone the repository and use the command line to navigate to this folder and run the command _`python app.py`_ and you will be able to view it at http://127.0.0.1:8050/
+- **To view the dashboard locally**, please clone the repository and use the command line to navigate to this folder and run the command `python app.py` and you will be able to view it at http://127.0.0.1:8050/
 
   _**Note**: the 'Trendline' animation does not function properly while running online for some reason, but this is not a problem while running on the local computer_.
 
