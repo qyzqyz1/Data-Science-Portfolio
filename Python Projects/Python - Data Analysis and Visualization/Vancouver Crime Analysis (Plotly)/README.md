@@ -8,7 +8,7 @@ Specifically, I created the following plots to answer the corresponding question
   - Geographical Graph (*_Plotly/Python_*): demonstrates where each type of crime tends to occur
   - Time Series Graph (*_Plotly/Python_*): shows how various crimes change over time 
   
-Since most of my plots are made with Plotly in Python, for a better visual experience please view: 
+Since most of my plots are made with Plotly in Python, for a better visual experience please view:   
 [Presentation Slides Here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/](https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/).
 
 ## File Description:
