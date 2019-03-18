@@ -1,12 +1,12 @@
 # Vancouver Crime Data Analysis (Dash)
 
 ## Project Description
-In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find similarities among crime occurrences in terms of their time, type and location. I came up with some analytical questions to start with and then developed a set of visualizations to address them.
+In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find similarities among crime occurrences in terms of their time, type and location. A web-based user-interactive dashboard was created usng Plotly Dash and can be viewed HERE.
 
-Specifically, I created the following plots to answer the corresponding question which I see appropriate:
-  - Network Graph (*_Python_*): illustrates what major crimes each neighborhood is facing
-  - Geographical Graph (*_Plotly/Python_*): demonstrates where each type of crime tends to occur
-  - Time Series Graph (*_Plotly/Python_*): shows how various crimes change over time 
+Specifically, I created the three sections for the user to explore the following stories:
+- **Initial Exploration**: What were the crimes occured on a selected date
+- **Further Exploration**: For each type of crime, what are the top 5 neighborhoods where it tends to occur? What are its time patterns?
+- **Trendline**: How has the overall crime condition in Vancouver changed over the years?
   
 Since most of my plots are made with Plotly in Python, for a better visual experience please view my [Presentation Slides Here](https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/).
 
@@ -17,8 +17,7 @@ Since most of my plots are made with Plotly in Python, for a better visual exper
   - **crime_csv_all_years.csv**: data from 2003-2019, with coordinates in Latitude and Longitude
 
 ## Practiced Skills:
-  - Plotly in Python
-  - Creating Network Graph
+  - Plotly Dash in Python
   - Data Wrangling
   - Storytelling
   
