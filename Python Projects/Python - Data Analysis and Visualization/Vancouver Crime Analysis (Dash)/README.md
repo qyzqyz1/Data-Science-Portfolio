@@ -1,14 +1,16 @@
 # Vancouver Crime Data Analysis (Dash)
 
 ## Project Description
-In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find similarities among crime occurrences in terms of their time, type and location. A web-based user-interactive dashboard was created usng Plotly Dash.
+In this project, I explored Vancouver's public crime dataset from [this link](https://data.vancouver.ca/datacatalogue/crime-data.htm) and aimed to find hidden patterns behind crime occurrences in terms of their type, location and time. A web-based user-interactive dashboard was created usng Plotly Dash.
 
-To view it online, please check the link below:  
+- **To view the dashboard online**, please check the link below:  
+[Dashboard for Vancouver Crime EDA: https://vancouver-crime-dashboard-app.herokuapp.com/](https://vancouver-crime-dashboard-app.herokuapp.com/).
 
-[Dashboard for Vancouver Crime EDA: https://vancouver-crime-dashboard-app.herokuapp.com/](https://vancouver-crime-dashboard-app.herokuapp.com/)
+- **To view the dashboard locally**, please clone the repository and use the command line to navigate to this folder and run the command `python app.py` and you will be able to view it at http://127.0.0.1:8050/
 
-To view it locally, please clone the repository and use the command line to navigate to this folder and run `python app.py`.
+  _Note: the 'Trendline' animation does not function properly while running online for some reason, but this is not a problem while running on the local computer_.
 
+## Dashboard Overview
 Specifically, I created the three sections for the user to explore the following stories:
 - **_Initial Exploration_**: What crimes have occurred on a selected date?  
   Sample Output:  
