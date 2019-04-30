@@ -1,5 +1,5 @@
 ## Project Description
-Analyze the seismic timing data (can be found [here](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Machine%20Learning/Predictive%20Modelling%20-%20Seismic%20Timing%20Dataset%20Project/Data/seismictimingsfull_dataset.R)) using the gam() function.  
+Analyze the [seismic timing data](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Machine%20Learning/Predictive%20Modelling%20-%20Seismic%20Timing%20Dataset%20Project/Data/seismictimingsfull_dataset.R)) using the gam() function.  
 
 The z variable of this data set corresponds to seismic timings measured by geophones
 dropped into ditches dug along transects following the (x; y) coordinates. The timings are
