@@ -1,0 +1,131 @@
+---
+title: "Assignment-2"
+author: "Yizhe Qu"
+date: "February 9, 2019"
+output: html_document
+---
+
+# Q1  
+
+a)
+```{r}
+card <- read.csv("C:/Users/yizhe/Desktop/MDS/Term4/data_572/data/car93.csv", stringsAsFactors = FALSE)
+pcard <- prcomp(as.matrix(card[,-c(1,2,3,4)]), scale.=TRUE)
+summary(pcard)
+biplot(pcard)
+```
+
+b)
+The first principal component is made up of a relatively equal weight of all the variables. However, MPG ratings, RPM, and Rev.per.mile are all negatively associated with the first component. We can somewhat view this component as a measure of the `size' of the car, since large cars will have high scores on all the positively correlated variables and smaller scores on the four negatively associated variables.  
+
+c)   
+The second principal component is a bit less clear. We have a high positive loading of price, horsepower, and RPM, along with large negative loadings for MPG and rear seats, luggage. This suggests relatively small, expensive cars with strong engines. It seems we could potentially interpret this as a measure of "luxuriousness".   
+
+d)  
+
+i) Kaiser criterion states that all PCs where lambda > 1 should be kept. In this case, PC1 and PC2 should be kept.  
+
+ii) We can keep the first 4 principal components to retain at least 90% of the variance in the data.  
+```{r}
+cum_var <- cumsum(pcard$sdev^2/sum(pcard$sdev^2))
+cum_var
+```
+
+iii) According to scree plot, we keep the first two principal components since the "elbow" is found at PC2.  
+```{r}
+plot(pcard, type="lines", main="Scree Plot")
+```
+
+e)  
+i)  
+```{r}
+pccomps <- pcard$x[,1:2]
+small <- card$Type=="Small"
+cvres <- list()
+predprob <- NA
+for(i in 1:nrow(pccomps)){
+  dum <- data.frame(small=small[-i], PC1=pccomps[-i,1], PC2=pccomps[-i,2])
+  cvres[[i]] <- glm(small~., data=dum, family="binomial")
+  predprob[i] <- predict(cvres[[i]], newdata=data.frame(pccomps), type="response")[i]
+}
+library(MLmetrics)
+table(small, predprob>0.5)
+LogLoss(predprob, small)
+```
+
+ii)  
+```{r}
+library(MASS)
+ldabin <- lda(small~pccomps, CV=TRUE)
+table(small, ldabin$class)
+LogLoss(ldabin$posterior[,2], small)
+```
+
+iii)  
+```{r}
+ldamult <- lda(card$Type~pccomps, CV=TRUE)
+table(card$Type, ldamult$class)
+MultiLogLoss(ldamult$posterior, card$Type)
+```
+
+f)  
+The fact that LDA and Logistic regression can find the structure of Small vs Not-Small cars in the first two fits suggests to some extent that our interpretation of the first component (size of car) may well hold true. In terms of LDA using all car types, we can see Compact, Small, Midsize, and Large all being largely distinguishable through the first two components. The only category of car that is poorly classified is Sporty.  
+
+# Q2  
+
+a)  
+```{r}
+library(nnet)
+car_numeric <- card[,-c(1,2,3)]
+scar <- apply(car_numeric, 2, function(v) (v-min(v))/(max(v)-min(v)))
+set.seed(4521)
+nncar <- nnet(Price~., data=scar, size=5)
+res <- predict(nncar)
+mse <- mean((scar[,1]-res)^2)
+mse
+```
+
+b)  
+```{r}
+set.seed(217)
+ind <- sample(1:nrow(scar), 41)
+train <- scar[ind,]
+test <- scar[-ind,]
+nncar <- nnet(Price~., data=train, size=5)
+yhat <- predict(nncar, test[,-1])
+mse <- mean((yhat-test[,1])^2)
+mse
+```
+Not marked (or bonus if the student notices the same thing and provides at least some further investigation): Note there is something funny going on here. In fact, our train test setup is providing better results than our original run on the full data.time for some investigation, after playing around with some settings, we can get.  
+```{r}
+set.seed(4521)
+nncar3 <- nnet(Price~., data=scar, size=2, maxit=3000, linout=TRUE, trace=FALSE)
+res <- predict(nncar3)
+mse <- mean((scar[,1]-res)^2)
+mse
+
+nncar4 <- nnet(Price~., data=train, size=2, maxit=3000, linout=TRUE, trace=FALSE)
+yhat2 <- predict(nncar, test[,-1])
+mse <- mean((yhat2-test[,1])^2)
+mse
+```
+Which makes more sense. I believe the predominant issue was the number of weights we were estimating given quite a small sample size (my apologies for setting up the question that way).  
+
+c)  
+Now we first need to transfer back to the original scale, then to the dollars unit. I will provide the answer both in terms of sqrt(MSE) and MAE (mean absolute error), and I will use the original runs even though they don't make much sense. Square root of the MSE does not provide you "on average, how far off is your model," but the important practice I'm looking for in this question is transforming back to the original scale.  
+```{r}
+#first get my predictions back to the original scale
+osyhat <- yhat*(max(card$Price)-min(card$Price)) + min(card$Price)
+#then to the dollars unit
+osyhat <- 1000*osyhat
+#then use the indexing for my testing set on the original price
+osy <- card$Price[-ind]*1000
+#now calculate sqrt(MSE) for this...
+sqrt(mean((osyhat-osy)^2))
+```  
+```{r}
+#now for the better version
+mean(abs(osyhat-osy))
+```
+
+

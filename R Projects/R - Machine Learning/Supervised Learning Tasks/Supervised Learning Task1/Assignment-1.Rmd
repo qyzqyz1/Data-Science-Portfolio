@@ -1,0 +1,137 @@
+---
+title: "Assignment-1"
+author: "Yizhe Qu"
+date: "January 19, 2019"
+output: html_document
+---
+# Q1  
+a)  
+```{r}
+library(gclus)
+data(bank)
+library(MASS)
+ldamod <- lda(Status ~ Diagonal + Top + Length + Left + 
+                Right, data=bank, CV=TRUE)
+table(bank$Status, ldamod$class)
+```
+As we can see, we misclassify two genuine bank notes as a counterfeit, giving us a misclassification rate of 0.01. Let's look at some of our other metrics.
+```{r}
+library(MLmetrics)
+Sensitivity(bank$Status, ldamod$class)
+Recall(bank$Status, ldamod$class) #same thing!
+Precision(bank$Status, ldamod$class)
+Specificity(bank$Status, ldamod$class)
+F1_Score(bank$Status, ldamod$class)
+LogLoss(ldamod$posterior[,2], bank$Status)
+```
+b)  
+```{r}
+qdamod <- qda(Status ~ Diagonal + Top + Length + Left + 
+                Right, data=bank, CV=TRUE)
+table(bank$Status, qdamod$class)
+```
+Once more, we misclassify two genuine bank notes as a counterfeit, giving us a misclassification rate of 0.01.
+```{r}
+Sensitivity(bank$Status, qdamod$class)
+Recall(bank$Status, qdamod$class) #same thing!
+Precision(bank$Status, qdamod$class)
+Specificity(bank$Status, qdamod$class)
+F1_Score(bank$Status, qdamod$class)
+LogLoss(qdamod$posterior[,2], bank$Status)
+```
+Logloss is slightly worse than from LDA.  
+
+c)  
+```{r}
+library(class)
+knnmod <- knn.cv(bank[,-c(1,5)],  cl=bank$Status, k=3, prob=TRUE)
+table(bank$Status, knnmod)
+```
+This time, we only misclassify one genuine bank note as a counterfeit, giving us a misclassification rate of 0.005.
+```{r}
+Sensitivity(bank$Status, knnmod)
+Recall(bank$Status, knnmod) 
+Precision(bank$Status, knnmod)
+Specificity(bank$Status, knnmod)
+F1_Score(bank$Status, knnmod)
+```
+Note that calculating LogLoss is a bit of a mess here (just like it was in lab).  
+```{r}
+probs <- attr(knnmod, "prob")
+probs[probs==0] <- 1e-15
+missedprobs <- 1-probs[bank$Status!=knnmod]
+missedprobs[missedprobs==0] <- 1e-15
+(sum(-log(probs[bank$Status==knnmod])) + sum(-log(missedprobs)))/200
+```
+d)  
+This is fairly open ended, as the performance is pretty similar. KNN gets heavily penalized for its one misclassification having happened with probability 1, so by logloss LDA is the winner. That said, if we view the misclassification probabilities associated with LDA.  
+```{r}
+ldamod$posterior[ldamod$class!=bank$Status,]
+```
+the worst misclassification at .9999733 is pretty darn close to probability 1. So perhaps the capped logloss is differentiating between 1 and .9999733 a bit too much. For example, if we truncate at 1e-5 instead of 1e-15.  
+
+```{r}
+probs <- attr(knnmod, "prob")
+probs[probs==0] <- 1e-5
+missedprobs <- 1-probs[bank$Status!=knnmod]
+missedprobs[missedprobs==0] <- 1e-5
+(sum(-log(probs[bank$Status==knnmod])) + sum(-log(missedprobs)))/200
+```
+Now KNN would be considered just slightly better than LDA.
+
+With this in mind, I'm inclined to lean towards misclassification rate or F1 score and declare KNN as a better classification model on this data. Note that if we want to factor in inference abilities of the model, this would certainly swing over to a preference for LDA.  
+
+e)  
+If we look at the data, along with the results we see in the earlier analyses, it is clear that this data set is easy from a classification standpoint. We have two well-separated groups:  
+```{r}
+plot(bank[,-1], col=bank[,1]+1)
+```
+If we consider a cost associated with taking each of these measurements, it behooves us to simplify the measuring process. The scatterplot matrix provides a clear way to go about this: the Diagonal measure on its own will likely serve us just as well to differentiate between the genuine and counterfeit notes as the full data set! Any of the systematic approaches for variable selection that we have covered should (hopefully) come to the same conclusion.  
+# Q2
+```{r}
+library(arules)
+okc <- read.csv("C:/Users/yizhe/Desktop/MDS/Term4/data_572/data/okcupidprofiles.csv")
+summary(okc)
+```
+Note that there are a lot of issues here with the read-in. For example, one of the answers for orientation appears to be languages. A deeper dive will show issues for several consecutive rows.  
+```{r}
+okc[27939:27944,1]
+okc[28325:28330,1]
+
+```
+There are lots of other rows that are corrupted with additional (html code type) information in here as well. I'm just going to remove them all by removing any age entry that has more than 3 characters  
+
+```{r}
+okc <- okc[nchar(as.character(okc$age))<=2,]
+okc <- droplevels(okc)
+summary(okc)
+```
+Also, there are lots of empty answers that should probably be recorded as NA's for us. For example,  
+```{r}
+names(table(okc$smokes))
+```
+Shows one of the answers is just "". Let's replace all of those with NA  
+```{r}
+okc[okc==""] <- NA
+summary(okc)
+```  
+Let's get age into a continuous format and then discretize it into age groups  
+
+```{r}
+okc$age <- as.numeric(as.character(okc$age))
+okc$age <- discretize(okc$age, method="interval", breaks=4)
+```
+Now, there are a number of variables that are probably uninteresting - I'm going to remove last_online and location  
+```{r}
+okc <- okc[,-c(11:12)]
+```
+Okay, now we run apriori under default specification.
+```{r}
+aok <- apriori(okc)
+summary(aok)
+inspect(sort(aok, by="support")[1:10])
+inspect(sort(aok, by="confidence")[1:10])
+inspect(sort(aok, by="lift")[1:10])
+```  
+With more cleaning, organization, and tuning, we might be able to remove some of the more uninteresting results. But I think the higher lift associations do have some level of interestingness about them. The top 8 rules according to lift all result in an association with male profiles for the rhs, and on the lhs they all show body_type = athletic - this begins to suggest that males might be more likely to describe their bodies as "athletic" than females do. The last two top lift rules show that folks that say they never do drugs, have higher education, and are straight, are more likely than expected to also not smoke.  
+
