@@ -1,0 +1,153 @@
+---
+title: "Assignment-1"
+author: "Tom Qu"
+date: "2/24/2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+#Q1
+## (a)
+```{r}
+library(gclus)
+data(bank)
+```
+
+We should consider one of the standardized distance measures (standardized or Mahalanobis), as even though the measuring units are the same across each bill measurement, the scale is quite different across them (Diagonal has a standard deviation > 4 times Length or Left, for instance).
+
+## (b)
+```{r}
+bank_scaled_dist <- dist(scale(bank[,-c(1,5)]))
+plot(hclust(bank_scaled_dist, method="single"))
+plot(hclust(bank_scaled_dist, method="complete"))
+plot(hclust(bank_scaled_dist, method="average"))
+```
+
+## (c)
+The complete linkage dendrogram appears to give the clearest group structure. Both single linkage and average linkage will put several observations in their own group.
+
+## (d)
+The dendogram suggests a choice of K=2.
+```{r}
+hcres <- cutree(hclust(bank_scaled_dist, method="complete"), 2)
+table(bank$Status, hcres)
+19/200 #misclassification rate
+```
+We misclassify 19 genuine notes into the group that is made of primarily counterfeit notes, for a misclassification rate of 0.095.
+
+## (e)
+```{r}
+set.seed(632)
+kscale <- kmeans(bank_scaled_dist, 2)
+table(bank$Status, kscale$clus)
+22/200 #misclassification rate
+```
+For this run of kmeans, we misclassify 20 genuine notes into the group that is made of primarily counterfeit notes, along with 2 counterfeits in the primarily genuine group, for a misclassification rate of 0.11.
+
+## (f)
+```{r}
+set.seed(632)
+kraw <- kmeans(bank[,-c(1,5)], 2)
+table(bank$Status, kraw$clus)
+1/200 #misclassification rate
+```
+
+For this run of kmeans on the raw data, we misclassify only one of the bank notes for a rate of 0.005! This actually goes **against** our generalized rules discussed in class. Since we are looking at the raw data, predictors with high variability will dominate while building groups. It happens, in this case, that the higher variability predictor (Diagonal) actually provides a clearer picture of the two groups than the lower variability predictors (such as Length and Left). Hence, this is a case where standardization will actually hurt us in finding the known group structure within the data.
+
+## (g)
+Overall, the strong performance of the clustering algorithms tells us that there is a very strong group structure in the data --- which actually corresponds to the known categories of counterfeit and genuine bills.
+
+#Q2
+```{r}
+load("C:/Users/yizhe/Desktop/MDS/Term5/data_573/data/lots.Rdata")
+```
+
+## (a)
+```{r}
+plot(datmat, col=clusts)
+```
+
+Note that the above plot is pretty useless since R is recycling the colour vector. Here's an improvement...
+
+```{r}
+library(RColorBrewer)
+qual_col_pals = brewer.pal.info[brewer.pal.info$category == 'qual',]
+col_vector = unlist(mapply(brewer.pal, qual_col_pals$maxcolors, rownames(qual_col_pals)))
+palette(col_vector)
+plot(datmat, col=clusts)
+```
+
+## (b)
+```{r}
+library(mclust)
+set.seed(461)
+r1 <- kmeans(datmat, 20)
+adjustedRandIndex(clusts, r1$cluster)
+```
+
+## (c)
+```{r}
+set.seed(41)
+r2 <- kmeans(datmat, 20)
+adjustedRandIndex(clusts, r2$cluster)
+```
+
+## (d)
+```{r}
+set.seed(461)
+r3 <- kmeans(datmat, 20, nstart=1000)
+adjustedRandIndex(clusts, r3$cluster)
+```
+
+## (e)
+```{r}
+set.seed(41)
+r4 <- kmeans(datmat, 20, nstart=1000)
+adjustedRandIndex(clusts, r4$cluster)
+```
+
+## (f)
+Each run provides a different result with respect to classification of the true groups, which is surprising as the groups structures are relatively clear (as seen in part 'a'). We could also tell this from viewing the within group sum of squares for each:
+```{r}
+r1$tot.withinss
+r2$tot.withinss
+r3$tot.withinss
+r4$tot.withinss
+```
+
+It's worth noting that the runs with many random starts (`r3` and `r4`) have significantly lower within group sum of squares than the individual runs (`r1` and `r2`). But while `r4` does achieve perfect classification, `r3` does not --- and this is with 1000 random starts. All of this illustrates concerns with k-means being able to consistently find the global minima for data with this many groups.
+
+#Q3
+```{r}
+library(mvtnorm)
+set.seed(35151)
+le <- rmvnorm(400, mean = c(-5,7.5))
+re <- rmvnorm(400, mean = c(5,7.5))
+hd <- rmvnorm(400, mean = c(0,0), sigma=7*diag(2) )
+dat <- rbind(le, re, hd)
+mrun <- Mclust(dat)
+plot(dat, col=mrun$class)
+summary(mrun)
+table(rep(c(1,2,3), each=400), mrun$class)
+```
+
+Yes, the result is more sensible. The VII model is chosen, which allows the volume (essentially, group size) to differ among groups --- this is important since the "ears" are smaller than the "head". From the table provided, one can see that only 6 observations total are misclassified.
+
+#Q4
+```{r}
+load("C:/Users/yizhe/Desktop/MDS/Term5/data_573/data/asim.Rdata")
+x <- asim[,-1]
+y <- asim[, 1]
+u1 <- hclust(dist(scale(x)))
+res1 <- cutree(u1, 2)
+ulinmod2 <- lm(y~x*res1)
+summary(ulinmod2)
+```
+
+Pretty much any clustering algorithm can be used to 'generate' the new categorical predictor, as the group structure is very strong. Utilizing that predictor in the linear model as an interactor with all the other variables provides the model that surpasses the 0.99 threshold for $R^2$.
+
+
+

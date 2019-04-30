@@ -1,0 +1,276 @@
+---
+title: "Assignment 2"
+author: "Yizhe Qu"
+date: "March 10, 2019"
+output: html_document
+---
+# Q1  
+
+```{r}
+library(mlbench)
+data(HouseVotes84)
+hv <- HouseVotes84
+head(hv)
+```
+a)  
+```{r}
+# Cleaning NAs
+hv2 <- data.frame(lapply(hv, as.character), stringsAsFactors=FALSE)
+hv2[is.na(hv2)] <- 'NoVote'
+hv <- data.frame(lapply(hv2, as.factor))
+head(hv)
+```
+b)  
+```{r}
+library(cluster)
+hv_d <- hv[-1]
+gower_dis <- daisy(hv_d, metric='gower')
+dis_matrix <- as.matrix(gower_dis)
+```
+c)  
+```{r}
+# Single Linkage Method
+clus1 <- hclust(gower_dis, method='single')
+plot(clus1)
+# Complete Linkage Method
+clus2 <- hclust(gower_dis, method='complete')
+plot(clus2)
+# Average Linkage Method
+clus3 <- hclust(gower_dis, method='average')
+plot(clus3)
+```
+
+Cluster 3 - 'average' method gives the clearest grouping result, which suggests 2 groups
+
+```{r}
+party_aff <- cutree(clus3,2)
+table(hv$Class, party_aff)
+```
+
+d)  
+```{r}
+mds <- cmdscale(dis_matrix,eig=TRUE, k=2)
+x <- mds$points[,1]
+y <- mds$points[,2]
+
+# empty plot
+plot(x,y, type = 'n')
+# add points
+points(x,y, col= hv$Class, type = "p", xlab = "", ylab = "", asp = 1)
+```
+
+e)  
+```{r}
+# Performing K-means
+k_mean <- kmeans(mds$points, 2)
+plot(x,y, col=k_mean$cluster)
+table(party_aff,k_mean$cluster)
+```
+f)  
+```{r}
+# Mixture Models
+library(mclust)
+mhv <- Mclust(mds$points)
+mhv$BIC
+table(hv$Class, mhv$classification)
+plot(x,y, col=mhv$classification)
+```
+5 groups are suggested by BIC
+
+# Q2
+
+```{r}
+cov_mat <- ability.cov$cov
+cov_mat
+```
+a)  
+```{r}
+facar1 <- factanal(covmat=cov_mat, factors=1, rotation='none',n.obs=112)
+facar1
+```
+No, since:   
+  1) the uniqueness values for picture, blocks and maze are very high, which indicate that those variables are not being captured with the current factor  
+  2) the cumulative proportion of variance explained by this factor is only 0.407 (pretty low value)  
+  3) the p-value < 0.05, so reject the null hypothesis that only 1 factor is sufficient to describe the data
+
+b)  
+```{r}
+cor_mat <- cov2cor(cov_mat)
+facar2 <- factanal(covmat=cor_mat, factors=1, rotation='none',n.obs=112)
+facar2
+```
+There doesn't seem a difference in this model to the previous one
+
+c)  
+```{r}
+facar3 <- factanal(covmat=cov_mat, factors=2, rotation='none', n.obs=112)
+facar3
+```
+Yes, the p-value > 0.05, so fail to reject the null hypothesis that 2 factors are sufficient to describe the data  
+Factor 1 has significant influence on the variables: "general", "reading", and "vocab"  
+Factor 2 has significant influence on the variable: "blocks"
+
+d)  
+```{r}
+facar4 <- factanal(covmat=cov_mat, factors=2, rotation='varimax', n.obs=112)
+facar4
+```
+The uniquenesses of the variables and the p-value haven't changed, while each individual loadings have changed  
+Factor 1 now has significant influence on the variables: "reading" and "vocab"  
+Factor 2 now has significant influence on the variable: "blocks"  
+Yes, it is easier to interpret than before since the "varimax" rotation is used so that each variable loads heavily on only one factor
+
+e)  
+```{r}
+facar5 <- factanal(covmat=cov_mat, factors=2, rotation='promax', n.obs=112)
+facar5
+```
+Factor Correlations are added to the output  
+We assume non-orthogonal rotation (oblique rotation), so that there will be a correlation between Factors  
+Factor 1 loads heavily on the variables: "reading" and "vocab"  
+Factor 2 loads heavily on the variable: "blocks"  
+The correlation between Factor 1 and Factro 2 is 0.557  
+
+# Q3
+```{r}
+#download.file("http://yann.lecun.com/exdb/mnist/t10k-images-idx3-ubyte.gz","t10k-images-idx3-ubyte.gz")
+#download.file("http://yann.lecun.com/exdb/mnist/t10k-labels-idx1-ubyte.gz","t10k-labels-idx1-ubyte.gz")
+# install.packages("R.utils")
+#R.utils::gunzip("t10k-images-idx3-ubyte.gz")
+#R.utils::gunzip("t10k-labels-idx1-ubyte.gz")
+# helper function for visualization
+show_digit = function(arr784, col = gray(12:1 / 12), ...) {
+  image(matrix(as.matrix(arr784[-785]), nrow = 28)[, 28:1], col = col, ...)
+}
+
+# load image files
+load_image_file = function(filename) {
+  ret = list()
+  f = file(filename, 'rb')
+  readBin(f, 'integer', n = 1, size = 4, endian = 'big')
+  n    = readBin(f, 'integer', n = 1, size = 4, endian = 'big')
+  nrow = readBin(f, 'integer', n = 1, size = 4, endian = 'big')
+  ncol = readBin(f, 'integer', n = 1, size = 4, endian = 'big')
+  x = readBin(f, 'integer', n = n * nrow * ncol, size = 1, signed = FALSE)
+  close(f)
+  data.frame(matrix(x, ncol = nrow * ncol, byrow = TRUE))
+}
+
+# load label files
+load_label_file = function(filename) {
+  f = file(filename, 'rb')
+  readBin(f, 'integer', n = 1, size = 4, endian = 'big')
+  n = readBin(f, 'integer', n = 1, size = 4, endian = 'big')
+  y = readBin(f, 'integer', n = n, size = 1, signed = FALSE)
+  close(f)
+  y
+}
+
+# load images
+test  = load_image_file("t10k-images-idx3-ubyte")
+
+# load labels
+
+test$y  = as.factor(load_label_file("t10k-labels-idx1-ubyte"))
+```
+a)  
+```{r}
+par(mfrow=c(5,5))
+par(mar=c(1,1,1,1))
+for(i in 1:25){
+    show_digit(test[i, ],xaxt="n", yaxt="n")
+    }
+```  
+b)  
+```{r}
+pr <- prcomp(test[-785])
+```
+The maximum number of permittable components is 784
+
+c)  
+```{r}
+par(mfrow=c(5,5), omi=c(0,0,0,0), mai=c(0.1,0.1,0.1,0.1))
+
+for(i in 1:25){
+    show_digit(matrix(pr$rotation[,i]),xaxt="n", yaxt="n")
+}
+
+mx_transformed <- pr$x
+vars_transformed <- apply(mx_transformed, 2, var)
+cum_var_25 <- sum(vars_transformed[1:25])/sum(vars_transformed)
+cum_var_25
+```
+
+The percentage of the original variation in the pixels explained by the first 25 PCs is 0.7019
+
+d)  
+```{r}
+par(mfrow=c(5,4), omi=c(0,0,0,0), mai=c(0.1,0.1,0.1,0.1))
+
+i <- 25
+for(x in 1:10){
+  reconst <- (t(pr$rotation[,1:i] %*% t(pr$x[,1:i])))
+  # Plot first 10 digits from reconstructions
+  show_digit(t(matrix(reconst[x,])), xaxt="n", yaxt="n")
+  # Plot original first 10 digits
+  show_digit(test[x, ],xaxt="n", yaxt="n")
+}
+```
+
+e)  
+```{r}
+load("C:/Users/yizhe/Desktop/MDS/Term5/data_573/assignments/nmfres.Rdata")
+```
+```{r}
+par(mfrow=c(5,5), omi=c(0,0,0,0), mai=c(0.1,0.1,0.1,0.1))
+
+for(i in 1:25){
+    show_digit(t(matrix(nmfres$h[i,])), xaxt="n", yaxt="n")
+}
+
+```
+
+The eigenvectors in PCA can have either postivie or negative coefficients. So in the images, each eigenvector will focus on different parts by scoring positive or negative on those different features. However, in NMF, the coefficients in the linear combination must be non-negative, and the reuslt is a additive combination of baiss parts to reconstruct the whole.
+
+f)  
+```{r}
+par(mfrow=c(5,4), omi=c(0,0,0,0), mai=c(0.1,0.1,0.1,0.1))
+
+i = 25
+for(j in 1:10){
+  # Plot first 10 digits from reconstructions
+  recon <- nmfres$w[j,1:i]%*%nmfres$h[1:i,]
+  recon <- as.vector(recon)
+  recon<- matrix(recon, nrow = 28, ncol=28, byrow=TRUE)
+  image( -t(recon), col=gray((0:255)/255), xaxt="n", yaxt="n")
+  # Plot original first 10 digits
+  show_digit(test[j, ],xaxt="n", yaxt="n")
+}
+```
+
+g)  
+```{r}
+preds <- nmfres$w
+preds <- as.data.frame(preds)
+preds <-cbind(preds, test[,785])
+colnames(preds)[26]<- "labels"
+preds$labels<- as.factor(preds$labels)
+
+library(tree)
+tree_fit <- tree(labels~., data=preds)
+plot(tree_fit)
+text(tree_fit,pretty=0,cex=0.8)
+summary(tree_fit)
+```
+```{r}
+tree_prune <- cv.tree(tree_fit, FUN = prune.misclass)
+tree_prune
+plot(tree_prune, type="b")
+```
+
+Based on the pruned tree, it shows no nodes are removed. 
+
+And the misclassification rate is:
+```{r}
+min(tree_prune$dev)/10000
+```  
