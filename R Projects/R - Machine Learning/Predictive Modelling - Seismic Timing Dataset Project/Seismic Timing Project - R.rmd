@@ -1,0 +1,74 @@
+---
+title: "Data 583 Project"
+author: "Yizhe Qu"
+date: "April 9, 2019"
+output: html_document
+---
+```{r}
+source("C:/Users/yizhe/Desktop/data_583/project/seismictimingsfull.R")
+seis <- seismictimingsfull
+head(seis)
+```
+### Multiple Linear Regression  
+```{r}
+seis.lm <- lm(z~y+x, data=seis)
+summary(seis.lm)
+plot(seis.lm)
+AIC(seis.lm)
+```
+
+### Bivariate Spline Regression (with equally spaced knots)  
+```{r}
+library(mgcv)
+number.knots <- 10
+spacings_x <- seq(from=min(seis$x),to=max(seis$x),length=number.knots+2)[2:(number.knots+1)]
+spacings_y <- seq(from=min(seis$y),to=max(seis$y),length=number.knots+2)[2:(number.knots+1)]
+seis.sr <- gam(z ~ s(x) + s(y),knots=list(spacings_x,spacings_y), data = seis)
+summary(seis.sr)
+plot.gam(seis.sr)
+vis.gam(seis.sr)
+AIC(seis.sr)
+```
+
+### Thin-plate Splines  
+```{r}
+# thin plate spline, k=150
+seis.tpsl <- gam(z~s(x,y,k=150), data=seis)
+summary(seis.tpsl)
+plot(seis.tpsl, cex=4)
+AIC(seis.tpsl)
+gam.check(seis.tpsl)
+vis.gam(seis.tpsl)
+```
+```{r}
+# thin plate spline, k=-1
+seis.tpsl <- gam(z~s(x,y,k=-1), data=seis)
+summary(seis.tpsl)
+plot(seis.tpsl, cex=4)
+AIC(seis.tpsl)
+gam.check(seis.tpsl)
+vis.gam(seis.tpsl)
+```
+
+### Generalized Additive Model  
+```{r}
+library(mgcv)
+# normal family
+seis.gam.normal <- gam(z ~ s(y) + s(x), data = seis)
+summary(seis.gam.normal)
+plot(seis.gam.normal)
+AIC(seis.gam.normal)
+vis.gam(seis.gam.normal)
+```
+```{r}
+# gamma family
+seis.gam.gamma <- gam(z ~ s(y) + s(x), data = seis, family = Gamma(link = "log"))
+summary(seis.gam.gamma)
+plot(seis.gam.gamma)
+AIC(seis.gam.gamma)
+vis.gam(seis.gam.gamma)
+```
+
+
+
+
