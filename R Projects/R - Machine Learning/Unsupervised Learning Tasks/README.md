@@ -16,7 +16,7 @@
 ### Task2
 - For the built-in covariance matrix `ability.cov`, compared output reuslts from several **Factor Analyses** with different covariance matrix configurations
 ### Task3
-- For the MNIST database, conducted **Principal Component Analysis (PCA)** and **Non-negative Matrix Factorization (NMF)** on the images
+- For the `MNIST database`, conducted **Principal Component Analysis (PCA)** and **Non-negative Matrix Factorization (NMF)** on the images
 - Reconstructed approximations of the original observations using the first 25 PCs
 - Reconstructed approximations of the original observations using 25 NMF bases
 - Fitted a classification tree with labels as the response variable and the NMF scores as the predictors.
