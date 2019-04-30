@@ -1,7 +1,7 @@
 # Supervised Learning Tasks Description
 ## [Assignment-1](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Supervised%20Learning%20Tasks/Supervised%20Learning%20Task1)
 ### Task1
-- Compared model outputs from **LDA, QDA, k-nearest neighbours** on the `bank data`
+- Compared model outputs from **Linear Discriminant Analysis (LDA), Quadratic Discriminant Analysis (QDA), K-Nearest Neighbours** on the `bank data`
 ### Task2
 - Implemented **Association Rules Mining** on the `okcupidprofiles data` which contains OkCupid dating proles from the San Francisco region for interesting patterns.  
 
