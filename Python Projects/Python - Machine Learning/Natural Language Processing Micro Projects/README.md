@@ -9,3 +9,5 @@
 - [04-Text Classification](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects/04-Text-Classification.ipynb): Trained supervised learning model on vectorized text data for predicting labels
 
 - [05-Sentiment Analysis](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects/05-Sentiment-Analysis.ipynb): Performed a VADER sentiment analysis on the movie review text data
+
+- [06-Topic Modelling](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects/06-Topic-Modelling-LDA-NMF.ipynb): Applied TF-IDF vectorization to create a vectorized document term matrix and conducted topic modelling with non-negative matrix factorization
