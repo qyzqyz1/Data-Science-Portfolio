@@ -11,3 +11,5 @@
 - [05-Sentiment Analysis](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects/05-Sentiment-Analysis.ipynb): Performed a VADER sentiment analysis on the movie review text data
 
 - [06-Topic Modelling](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects/06-Topic-Modelling-LDA-NMF.ipynb): Applied TF-IDF vectorization to create a vectorized document term matrix and conducted topic modelling with non-negative matrix factorization
+
+_Natural language processing micro projects were completed along the way when I was taking the ["NLP - Natural Language Processing with Python"](https://www.udemy.com/nlp-natural-language-processing-with-python/) on Udemy. Proof of completion can be viewed [here](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/Udemy_NLP_with_Python.pdf)_. 
