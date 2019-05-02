@@ -1,5 +1,5 @@
 # Data-Science-Portfolio
-Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. Presented in the form of IPython Notebooks, and R markdown files.
+Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. Those projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
 
 _Note: Data used in the projects (accessed under data directory) is for demonstration purposes only._
 
@@ -22,6 +22,9 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	
 	- [Predictive Modelling - Seismic Timing Dataset Project](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Predictive%20Modelling%20-%20Seismic%20Timing%20Dataset%20Project): Analyzed the seismic timing data set and compared the performances of several different predictive models (e.g. multiple linear regression, bivariate spline regression, thin-plate splines, and generalized additive model (with normal and gamma family)).   
 
+- #### Microsoft Azure
+	- [Building a Predictive Model with Microsoft Azure](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Machine%20Learning%20with%20Microsoft%20Azure): Experienced in manipulating Azure Machine Learning Studio to build a predictive model on the 2016-17 NBA Player Status data set.
+
 ### Natural Language Processing
 - #### Python
 	- [City of Kelowna - Cutural Data Text Analysis]: Analyzed the City of Kelowna's survey responses to the city's cutural facet. Performed data cleaning, classification, sentiment analysis, topic modelling on those text data, as well as developed a web-based user-interactive dashboard for visualization purpose.   
@@ -40,9 +43,20 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [Storytelling for U.S. Flights Data (R Shiny)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data): Analyzed the 2008 American Airlines data set and self-developed an interesting topic for public storytelling and presentation purpose. In addition, a R shiny app was built and sample shiny outputs and explanations can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data/shiny%20outputs).
 	
 	- [Mini-Poster for U.S. Flights Data](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data): Created a mini-poster to show the general public our analysis findings in the delay conditions for the U.S. Airway over the year 2008. The mini-poster can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data/Final_Poster.pdf).
+
+- #### Tableau
+	- [Story for Asylum Seekers](https://public.tableau.com/profile/yizhe.qu#!/vizhome/MyFirstTableauStory_16/StoryforAsylumSeekers): This is my first Tableau project, in which I have created a short storyline with separate plots and a dashboard for the audience to explore the number of refugees by country and year.  
+
+	- [Market Sales in Europe](https://public.tableau.com/profile/yizhe.qu#!/vizhome/CustomerSalesinEurope_0/Dashboard): My second Tableau practice project, where I developed an interactive dashboard for users to analyze customer market sales in Euorpe by geographical locations and year.  
+
+	- [Bank Balance Customer Segmentation in U.K.](https://public.tableau.com/profile/yizhe.qu#!/vizhome/BankBalanceSegmentationinU_K_/Storyline?publish=yes): This Tableau project presents the customer segmentation of bank balance in the United Kingdom. The analysis is broken down respectively into distributions by country, balance, age, gender, and job classification. *(Features: interactive filtering, parameter controls, and anotations for storyline)*  
 	
 ### Other Data Science Skills
-	- [
+	- [Data Streaming with Spark](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Data%20Streaming%20with%20Pyspark): Wrote Spark programs in Python to read and perform operations on streaming data, after which SQL queries were further written to extract information of interest.
+	
+	- [Hadoop Workshop](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Hadoop%20Workshop): Practiced various hands-on exercises in Hadoop (e.g. HDFS, Hive, MapReduce, Spark, and Sqoop).
+	
+	- [Building Python Packages and Unit Testing](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Building%20Python%20packages%20and%20Unit%20Testing): Developed a Python package for calculating areas of different shapes based on user inputs of dimensions. Validated the performance of our package through unit testing technique, and further conducted continuous intergration testing with Travis CI.  
 
 
 If you liked what you saw, and want to have a chat with me about the portfolio, work opportunities, or collaboration, please shoot me an email at yizhe.qu@gmail.com. 
