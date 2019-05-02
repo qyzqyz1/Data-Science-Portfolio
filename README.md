@@ -22,48 +22,27 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	
 	- [Predictive Modelling - Seismic Timing Dataset Project](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Predictive%20Modelling%20-%20Seismic%20Timing%20Dataset%20Project): Analyzed the seismic timing data set and compared the performances of several different predictive models (e.g. multiple linear regression, bivariate spline regression, thin-plate splines, and generalized additive model (with normal and gamma family)).   
 
-	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib, Pygame_ 
+### Natural Language Processing
+- #### Python
+	- [City of Kelowna - Cutural Data Text Analysis]: Analyzed the City of Kelowna's survey responses to the city's cutural facet. Performed data cleaning, classification, sentiment analysis, topic modelling on those text data, as well as developed a web-based user-interactive dashboard for visualization purpose.   
 
-- ### Natural Language Processing
+	- [Natural Language Processing Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects): Containing various micro projects on implementations of different natural language processing techniques (e.g. python text basics, NLP basics, parts of speech, text classification, sentiment analysis, and topic modelling).
 
-	- [3-way Sentiment Analysis for Tweets](https://github.com/sajal2692/data-science-portfolio/blob/master/3-Way%20Sentiment%20Analysis%20for%20Tweets.ipynb): 3-way polarity (positive, negative, neutral) classification system for tweets, without using NLTK's sentiment analysis engine.
-
-	- [Cross language Information Retrieval](https://github.com/sajal2692/data-science-portfolio/blob/master/Cross%20Language%20Information%20Retrieval.ipynb): Cross language information retrieval system (CLIR) which, given a query in German, searches text documents written in English.
-
-	_Tools: NLTK, scikit_
-
-- ### Data Analysis and Visualisation
-	- __Python__
-		- [Scalable Walkability Analysis of Melbourne](https://github.com/sajal2692/Scalable-Walkability-Analysis-of-Melbourne): Analysis of walkability of suburbs in Melbourne, Victoria and its implications.
-		- [Titanic Dataset - Exploratory Analysis](https://github.com/sajal2692/data-science-portfolio/blob/master/Titanic%20Dataset%20-%20Exploratory%20Analysis.ipynb): Exploratory Analysis of the passengers onboard RMS Titanic using Pandas and Seaborn visualisations.
-		- [Stock Market Analysis for Tech Stocks](https://github.com/sajal2692/data-science-portfolio/blob/master/Stock%20Market%20Analysis%20for%20Tech%20Stocks.ipynb): Analysis of technology stocks including change in price over time, daily returns, and stock behaviour prediction.
-		- [2016 US General Election Poll Data Analysis](https://github.com/sajal2692/data-science-portfolio/blob/master/2016%20General%20Election%20Poll%20Analysis.ipynb): Very simple analysis of 2016 US General Election Poll data.
-		- [911 Calls - Exploratory Analysis](https://github.com/sajal2692/data-science-portfolio/blob/master/911%20Calls%20-%20Exploratory%20Analysis.ipynb): Exploratory Data Analysis of the 911 calls dataset hosted on Kaggle. Demonstrates extraction of useful features from different variables.
-		
-	_Tools: Pandas, Folium, Seaborn and Matplotlib_
-
-	- __R__ 
-		- [Behavioral Risk Factor Surveillance System(BRFSS) 2013: Exploratory Data Analysis](http://rpubs.com/sajal_sharma/brfss2013): Exploratory analysis of the BRFSS-2013 data set, focusing on investigating the relationship between education and eating habits, sleep and mental health, and smoking, drinking and general health of a person. 
-		- [Inferential Statistics: Do men or women oppose sex education?](http://rpubs.com/sajal_sharma/inferential_statistics) : Using the GSS (General Social Survey) dataset to infer if, in the year 2012, were men, of 18 years or above in the United States, more likely to oppose sex education in public schools than women.
-		- [Data Visualization: Corruption and Human Development](http://rpubs.com/sajal_sharma/corruption_viz): A scatter plot for the relationship between the 'Human Development Index' and the 'Corruption Perceptions Index' of countries.
-		- [Moneyball: Analysing and replacing lost players](http://rpubs.com/sajal_sharma/moneyball_lost_players): Exploration of baseball data for the year 2001 to look at replacements for key players lost by the Oakland A's in 2001. Inspired by the book/movie: Moneyball.
+### Data Analysis and Visualisation
+- #### Python
+	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Explored the Vancouver Crime Data and built a web-based user-interactive dashboard was created usng Plotly Dash. The dashboard can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
 	
+	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Explored the Vancouver Crime Data and posed several questions regarding the data set, which were then addressed by different chosen plots. The presentation slides with plotly plots can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
+	
+	- [911 Calls - Exploratory Data Analysis](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/911%20Calls): Performed exploratory analysis on the dataset to identify the areas in U.S. that would give the most 911 calls and also the top reasons for those calls. Various visualization plots were also made for different exploration purposes. 
 
-- ### Micro Projects: 
+- #### R
+	- [Storytelling for U.S. Flights Data (R Shiny)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data): Analyzed the 2008 American Airlines data set and self-developed an interesting topic for public storytelling and presentation purpose. In addition, a R shiny app was built and sample shiny outputs and explanations can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data/shiny%20outputs).
+	
+	- [Mini-Poster for U.S. Flights Data](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data): Created a mini-poster to show the general public our analysis findings in the delay conditions for the U.S. Airway over the year 2008. The mini-poster can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data/Final_Poster.pdf).
+	
+### Other Data Science Skills
+	- [
 
-	- __Python__
-		- [ML with Linear Regression](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Machine%20Learning%20with%20Linear%20Regression.ipynb): Applied Linear Regression to determine whether the company's mobile app or its website would bring greater profits in the future. 
-		- [ML with Logistic Regression](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Machine%20Learning%20with%20Logistic%20Regression.ipynb): Applied Logistic Regression to predict whether an internet user would click an ad or not.
-		- [ML with K Nearest Neighbours](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/ML%20with%20K%20Nearest%20Neighbors.ipynb): Applied KNN to classify instances from a fake dataset into two target classes, while determining the best value for K using the elbow method.
-		- [ML with Support Vector Machines](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/ML%20with%20Support%20Vector%20Machines.ipynb): Applied SVM and parameter tuning technique to classify flowers from the famous iris dataset into different categories.
-		- [ML with Decision Trees and Random Forests](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Machine%20Learning%20with%20Decision%20Trees%20and%20Random%20Forests.ipynb): Compared Decision Trees and Random Forests in their predictions of whether a lender will pay off their loans. Used publically available data from LendingClub.com.
-		- [Movie Recommendations using Recommender Systems](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Recommender%20Systems%20with%20Python.ipynb): Built a recommendation system that makes movie recommendations based on user review similarities. 
-		- [Text Analysis with NLTK](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Python%20Projects/Python%20-%20Machine%20Learning/ML%20Micro%20Projects/Text%20Analysis%20with%20NLTK.ipynb): Performed feature analysis on the news data, including finding words frequency, removing stopwords, finding n-grams, and creating a WordCloud.
-		
-			_Python ML micro projects were completed along the way when I was taking the ["Python for Data Science and Machine Learning Bootcamp"](https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/learn/v4/overview) on Udemy. Proof of completion can be viewed [here](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/Udemy_Python_Bootcamp.pdf)_. 
-
-	- __R__
-		- [ML Logistic Regression](http://rpubs.com/sajal_sharma/micro_logistic): Predicting salary class of a person using logistic regression.
-		- [ML Decision Trees and Random Forests](http://rpubs.com/sajal_sharma/micro_dt_rf): Using Decision Trees and Random Forests to classify schools as Private or Public.
 
 If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at contact@sajalsharma.com. 
