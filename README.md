@@ -7,7 +7,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 ### Machine Learning
 - #### Python
-	- [Supervised - Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential learning algorithms and conducted their implementations to help a fictitious charity organization, CharityML, to predict potential donors.  
+	- [Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential supervised learning algorithms and conducted their implementations to help a fictitious charity organization, CharityML, to predict potential donors based on multiple features. Compared model performances and further improved the chosen model through parameter tuning technique.
 	
 	- [Python ML Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Python%20ML%20Micro%20Projects): Containing various micro projects on implementations of different machine learning algorithms in Python (e.g. linear regression, logistic regression, k-nearest neighbors, support vector machines, random forests, and building of a recommendation system).  
 	
@@ -45,4 +45,4 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [
 
 
-If you liked what you saw, want to have a chat with me about the portfolio, work opportunities, or collaboration, shoot an email at contact@sajalsharma.com. 
+If you liked what you saw, and want to have a chat with me about the portfolio, work opportunities, or collaboration, please shoot me an email at yizhe.qu@gmail.com. 
