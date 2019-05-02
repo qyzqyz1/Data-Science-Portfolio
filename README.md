@@ -64,4 +64,4 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [Building Python Packages and Unit Testing](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Building%20Python%20packages%20and%20Unit%20Testing): Developed a Python package for calculating areas of different shapes based on user inputs of dimensions. Validated the performance of our package through unit testing technique, and further conducted continuous intergration testing with Travis CI.  
 
 
-If you liked what you saw, and want to have a chat with me about the portfolio, work opportunities, or collaboration, please shoot me an email at _yizhe.qu@gmail.com_. 
+If you liked what you saw, and want to have a chat with me about the portfolio, work opportunities, or collaboration, please shoot me an email at _yizhe.qu@gmail.com_
