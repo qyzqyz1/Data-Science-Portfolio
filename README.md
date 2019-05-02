@@ -1,7 +1,7 @@
 # Data-Science-Portfolio - Yizhe(Tom) Qu
 Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. 
 
-The projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
+The projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R Markdown files.
 
 _Note: Data used in the projects (accessed under data directory) is for demonstration purposes only._
 
@@ -15,7 +15,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	
 	- [Apache Spark Python Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Apache%20Spark%20ML%20Micro%20Projects): Containing various micro projects on implementations of different machine learning algorithms in Apache Spark Python (e.g. linear regression, logistic regression, random forests, k-means clustering, and natural language processing).  
 	
-	- [Deep Learning Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Deep%20Learning%20Micro%20Projects): Containing various micro projects on implementations of different deep learning /neural network topics in Python (e.g. multi-layer perceptrons, convolutional neural network, recurrent neural network, and training model through stochastic gradient descent and regularization). 
+	- [Deep Learning Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Deep%20Learning%20Micro%20Projects): Containing various micro projects on implementations of different deep learning/ neural network topics in Python (e.g. multi-layer perceptrons, convolutional neural network, recurrent neural network, and training model through stochastic gradient descent and regularization). 
 	
 - #### R
 	- [Supervised Learning Tasks in R](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Supervised%20Learning%20Tasks): Containing various tasks on implementations of supervised machine learning models in R (e.g. LDA, QDA, k-nearest neighbours, association rule mining, PCA, logistic regression, and neural network).  
