@@ -60,7 +60,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 - #### Hadoop
 	- [Hadoop Workshop](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Hadoop%20Workshop): Practiced various hands-on exercises in Hadoop (e.g. HDFS, Hive, MapReduce, Spark, and Sqoop).
 
-- ### Python and Travis CI
+- #### Python and Travis CI
 	- [Building Python Packages and Unit Testing](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Building%20Python%20packages%20and%20Unit%20Testing): Developed a Python package for calculating areas of different shapes based on user inputs of dimensions. Validated the performance of our package through unit testing technique, and further conducted continuous intergration testing with Travis CI.  
 
 
