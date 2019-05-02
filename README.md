@@ -1,5 +1,7 @@
 # Data-Science-Portfolio
-Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. Those projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
+Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. 
+
+The projects were completed along [My Journey to Data Scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
 
 _Note: Data used in the projects (accessed under data directory) is for demonstration purposes only._
 
@@ -59,4 +61,4 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [Building Python Packages and Unit Testing](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Building%20Python%20packages%20and%20Unit%20Testing): Developed a Python package for calculating areas of different shapes based on user inputs of dimensions. Validated the performance of our package through unit testing technique, and further conducted continuous intergration testing with Travis CI.  
 
 
-If you liked what you saw, and want to have a chat with me about the portfolio, work opportunities, or collaboration, please shoot me an email at yizhe.qu@gmail.com. 
+If you liked what you saw, and want to have a chat with me about the portfolio, work opportunities, or collaboration, please shoot me an email at _yizhe.qu@gmail.com_. 
