@@ -1,7 +1,7 @@
 # Data-Science-Portfolio
 Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. 
 
-The projects were completed along [My Journey to Data Scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
+The projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
 
 _Note: Data used in the projects (accessed under data directory) is for demonstration purposes only._
 
