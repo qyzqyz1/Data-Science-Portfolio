@@ -54,10 +54,13 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [Bank Balance Customer Segmentation in U.K.](https://public.tableau.com/profile/yizhe.qu#!/vizhome/BankBalanceSegmentationinU_K_/Storyline?publish=yes): This Tableau project presents the customer segmentation of bank balance in the United Kingdom. The analysis is broken down respectively into distributions by country, balance, age, gender, and job classification. *(Features: interactive filtering, parameter controls, and anotations for storyline)*  
 	
 ### Other Data Science Skills
+- #### Spark in Python
 	- [Data Streaming with Spark](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Data%20Streaming%20with%20Pyspark): Wrote Spark programs in Python to read and perform operations on streaming data, after which SQL queries were further written to extract information of interest.
-	
+
+- #### Hadoop
 	- [Hadoop Workshop](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Hadoop%20Workshop): Practiced various hands-on exercises in Hadoop (e.g. HDFS, Hive, MapReduce, Spark, and Sqoop).
-	
+
+- ### Python and Travis CI
 	- [Building Python Packages and Unit Testing](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Building%20Python%20packages%20and%20Unit%20Testing): Developed a Python package for calculating areas of different shapes based on user inputs of dimensions. Validated the performance of our package through unit testing technique, and further conducted continuous intergration testing with Travis CI.  
 
 
