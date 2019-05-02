@@ -5,16 +5,22 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 ## Contents
 
-- ### Machine Learning
+### Machine Learning
 - #### Python
-	- [Supervised - Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential learning algorithms and conducted their implementations to help a fictitious charity organization, CharityML, to predict potential donors.
-	- [Python ML Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Python%20ML%20Micro%20Projects): Containing various micro projects on implementations of different machine learning algorithms in Python (e.g. linear regression, logistic regression, k-nearest neighbors, support vector machines, random forests, and building of a recommendation system).
-	- [Apache Spark Python Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Apache%20Spark%20ML%20Micro%20Projects): Containing various micro projects on implementations of different machine learning algorithms in Apache Spark Python (e.g. linear regression, logistic regression, random forests, k-means clustering, and natural language processing).
+	- [Supervised - Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential learning algorithms and conducted their implementations to help a fictitious charity organization, CharityML, to predict potential donors.  
+	
+	- [Python ML Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Python%20ML%20Micro%20Projects): Containing various micro projects on implementations of different machine learning algorithms in Python (e.g. linear regression, logistic regression, k-nearest neighbors, support vector machines, random forests, and building of a recommendation system).  
+	
+	- [Apache Spark Python Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Apache%20Spark%20ML%20Micro%20Projects): Containing various micro projects on implementations of different machine learning algorithms in Apache Spark Python (e.g. linear regression, logistic regression, random forests, k-means clustering, and natural language processing).  
+	
 	- [Deep Learning Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Deep%20Learning%20Micro%20Projects): Containing various micro projects on implementations of different deep learning /neural network topics in Python (e.g. multi-layer perceptrons, convolutional neural network, recurrent neural network, and training model through stochastic gradient descent and regularization). 
+	
 - #### R
-	- [Supervised Learning Tasks in R](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Supervised%20Learning%20Tasks): Containing various tasks on implementations of supervised machine learning models in R (e.g. LDA, QDA, k-nearest neighbours, association rule mining, PCA, logistic regression, and neural network).
-	- [Unsupervised Learning Tasks in R](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Unsupervised%20Learning%20Tasks): Containing various tasks on implementations of unsupervised machine learning models in R (e.g. hierarchical clustering, k-means, mixture models, multidimensional scaling, factor analysis, PCA, and non-negative matrix factorization). 
-	- [Predictive Modelling - Seismic Timing Dataset Project](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Predictive%20Modelling%20-%20Seismic%20Timing%20Dataset%20Project): Analyzed the seismic timing data set and compared the performances of several different predictive models (e.g. multiple linear regression, bivariate spline regression, thin-plate splines, and generalized additive model (with normal and gamma family)). 
+	- [Supervised Learning Tasks in R](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Supervised%20Learning%20Tasks): Containing various tasks on implementations of supervised machine learning models in R (e.g. LDA, QDA, k-nearest neighbours, association rule mining, PCA, logistic regression, and neural network).  
+	
+	- [Unsupervised Learning Tasks in R](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Unsupervised%20Learning%20Tasks): Containing various tasks on implementations of unsupervised machine learning models in R (e.g. hierarchical clustering, k-means, mixture models, multidimensional scaling, factor analysis, PCA, and non-negative matrix factorization).   
+	
+	- [Predictive Modelling - Seismic Timing Dataset Project](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Predictive%20Modelling%20-%20Seismic%20Timing%20Dataset%20Project): Analyzed the seismic timing data set and compared the performances of several different predictive models (e.g. multiple linear regression, bivariate spline regression, thin-plate splines, and generalized additive model (with normal and gamma family)).   
 
 	_Tools: scikit-learn, Pandas, Seaborn, Matplotlib, Pygame_ 
 
