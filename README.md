@@ -47,7 +47,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 	- [Mini-Poster for U.S. Flights Data](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data): Created a mini-poster with visualizations to share our data analysis findings with the general public in terms of the delay condition for the U.S. Airway over 2008. The mini-poster can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data/Final_Poster.pdf).
 
 - #### Tableau
-	- [Story for Asylum Seekers](https://public.tableau.com/profile/yizhe.qu#!/vizhome/MyFirstTableauStory_16/StoryforAsylumSeekers): This is my first Tableau project, in which I have created a short storyline with separate plots and a dashboard for the audience to explore the number of refugees by country and year.  
+	- [Story for Asylum Seekers](https://public.tableau.com/profile/yizhe.qu#!/vizhome/MyFirstTableauStory_16/StoryforAsylumSeekers): My first Tableau practice project, in which I have created a short storyline with a dashboard for the audience to explore the number of refugees by country and year.  
 
 	- [Market Sales in Europe](https://public.tableau.com/profile/yizhe.qu#!/vizhome/CustomerSalesinEurope_0/Dashboard): My second Tableau practice project, where I developed an interactive dashboard for users to analyze customer market sales in Euorpe by geographical locations and year.  
 
