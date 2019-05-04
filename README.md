@@ -35,9 +35,9 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 ### Data Analysis and Visualisation
 - #### Python
-	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Explored the Vancouver Crime Data and built a web-based user-interactive dashboard was created usng Plotly Dash. The dashboard can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
+	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Developed a web-based user-interactive dashboard using Plotly Dash showing the crime patterns in terms of geo-location and time. The dashboard can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
 	
-	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Explored the Vancouver Crime Data and posed several questions regarding the data set, which were then addressed by different chosen plots. The presentation slides with plotly plots can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
+	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Explored the Vancouver Crime Dataset and posed several questions regarding the data set, which were later addressed by different chosen plots. The presentation slides with Plotly graphs can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
 	
 	- [911 Calls - Exploratory Data Analysis](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/911%20Calls): Performed exploratory analysis on the dataset to identify the areas in U.S. that would give the most 911 calls and also the top reasons for those calls. Various visualization plots were also made for different exploration purposes. 
 
