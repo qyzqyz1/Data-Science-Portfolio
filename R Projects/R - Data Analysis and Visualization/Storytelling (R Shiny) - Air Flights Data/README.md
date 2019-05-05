@@ -5,7 +5,7 @@ Analyzed the 2008 American Airlines dataset and self-developed an interesting to
 
 Furthermore, an interactive Shiny app was developed for a more versatile demonstration purpose and can be viewed here: https://yizhe-qu.shinyapps.io/weather_delay_shiny/. 
 
-Here is also a [short explanation](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data/shiny%20outputs) for the outputs from an old-versioned Shiny app.
+Here is also a [short explanation](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data/shiny%20outputs) for the outputs from an old-version Shiny app.
 
 Idea for the story: since flights can be delayed by weather, but it is hard to tell which airports are responsible for those delays if just by simply looking at the flight information. That is, were the extreme weather conditions occuring at the destination airports or at the departure airports? To answer this, a data analysis has been conduted in R and visualization plots were also made to give the auidence an intuition of where were the bad weathers occuring on a given date.
 
