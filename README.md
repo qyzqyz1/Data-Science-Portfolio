@@ -7,6 +7,27 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 ## Contents
 
+### Data Analysis and Visualisation
+- #### Python
+	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Developed a web-based user-interactive dashboard using Plotly Dash showing the crime patterns in terms of geo-location and time. The dashboard can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
+	
+	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Constructed different visualizations in order to address the questions posed to the Vancouver Crime dataset appropriately. The presentation slides with interactive Plotly graphs can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
+	
+	- [911 Calls - Exploratory Data Analysis](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/911%20Calls): Performed exploratory analysis on the dataset to identify the areas in U.S. that would give the most 911 calls and also the top reasons for those calls. Various visualization plots were also made for different exploration purposes. 
+
+- #### R
+	- [Storytelling for U.S. Flights Data (R Shiny)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data): Self-developed an interesting topic of finding the cities with terrible weather using the 2008 American Airlines dataset for public storytelling and presentation purpose. In addition, an interactive R Shiny app was built and can be viewed here: https://yizhe-qu.shinyapps.io/weather_delay_shiny/.
+	
+	- [Mini-Poster for U.S. Flights Data](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data): Created a mini-poster with visualizations to share our data analysis findings with the general public in terms of the delay condition for the U.S. Airway over 2008. The mini-poster can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data/Final_Poster.pdf).
+
+- #### Tableau
+	- [Story for Asylum Seekers](https://public.tableau.com/profile/yizhe.qu#!/vizhome/MyFirstTableauStory_16/StoryforAsylumSeekers): My first Tableau practice project, in which I have created a short storyline with a dashboard for the audience to explore the number of refugees by country and year.  
+
+	- [Market Sales in Europe](https://public.tableau.com/profile/yizhe.qu#!/vizhome/CustomerSalesinEurope_0/Dashboard): My second Tableau practice project, where I developed an interactive dashboard for users to analyze customer market sales in Euorpe by geographical locations and year.  
+
+	- [Bank Balance Customer Segmentation in U.K.](https://public.tableau.com/profile/yizhe.qu#!/vizhome/BankBalanceSegmentationinU_K_/Storyline?publish=yes): This Tableau project presents the customer segmentation of bank balance in the United Kingdom. The analysis is broken down respectively into distributions by country, balance, age, gender, and job classification. *(Features: interactive filtering, parameter controls, and anotations for storyline)*  
+
+
 ### Machine Learning
 - #### Python
 	- [Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential supervised learning algorithms and conducted their implementations to help a fictitious charity organization, CharityML, to predict potential donors based on multiple features. Compared model performances and further improved the chosen model through parameter tuning technique.
@@ -33,25 +54,6 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 	- [Natural Language Processing Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects): Containing various micro projects on implementations of different natural language processing techniques (e.g. python text basics, NLP basics, parts of speech, text classification, sentiment analysis, and topic modelling).
 
-### Data Analysis and Visualisation
-- #### Python
-	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Developed a web-based user-interactive dashboard using Plotly Dash showing the crime patterns in terms of geo-location and time. The dashboard can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
-	
-	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Constructed different visualizations in order to address the questions posed to the Vancouver Crime dataset appropriately. The presentation slides with interactive Plotly graphs can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
-	
-	- [911 Calls - Exploratory Data Analysis](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/911%20Calls): Performed exploratory analysis on the dataset to identify the areas in U.S. that would give the most 911 calls and also the top reasons for those calls. Various visualization plots were also made for different exploration purposes. 
-
-- #### R
-	- [Storytelling for U.S. Flights Data (R Shiny)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data): Self-developed an interesting topic of finding the worst weathered cities using the 2008 American Airlines dataset for public storytelling and presentation purpose. In addition, an interactive R Shiny app was built and can be viewed here: https://yizhe-qu.shinyapps.io/weather_delay_shiny/.
-	
-	- [Mini-Poster for U.S. Flights Data](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data): Created a mini-poster with visualizations to share our data analysis findings with the general public in terms of the delay condition for the U.S. Airway over 2008. The mini-poster can be viewed [HERE](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Mini-poster%20Project%20-%20Air%20Flights%20Data/Final_Poster.pdf).
-
-- #### Tableau
-	- [Story for Asylum Seekers](https://public.tableau.com/profile/yizhe.qu#!/vizhome/MyFirstTableauStory_16/StoryforAsylumSeekers): My first Tableau practice project, in which I have created a short storyline with a dashboard for the audience to explore the number of refugees by country and year.  
-
-	- [Market Sales in Europe](https://public.tableau.com/profile/yizhe.qu#!/vizhome/CustomerSalesinEurope_0/Dashboard): My second Tableau practice project, where I developed an interactive dashboard for users to analyze customer market sales in Euorpe by geographical locations and year.  
-
-	- [Bank Balance Customer Segmentation in U.K.](https://public.tableau.com/profile/yizhe.qu#!/vizhome/BankBalanceSegmentationinU_K_/Storyline?publish=yes): This Tableau project presents the customer segmentation of bank balance in the United Kingdom. The analysis is broken down respectively into distributions by country, balance, age, gender, and job classification. *(Features: interactive filtering, parameter controls, and anotations for storyline)*  
 	
 ### Other Data Science Skills
 - #### Spark in Python
