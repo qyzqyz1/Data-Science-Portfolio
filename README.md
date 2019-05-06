@@ -9,7 +9,7 @@ _Note: Data used in the projects (accessed under data directory) is for demonstr
 
 ### Data Analysis and Visualisation
 - #### Python
-	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Developed a web-based user-interactive dashboard using Plotly Dash showing the crime patterns in terms of geo-location and time. The **dashboard** can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
+	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Developed a web-based user-interactive dashboard using Plotly Dash showing the crime patterns in terms of geo-location and time. The **Dash dashboard** can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
 	
 	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Constructed different visualizations in order to address the questions posed to the Vancouver Crime dataset appropriately. The **Plotly presentation slides** with interactive graphs can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
 	
