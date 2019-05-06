@@ -1,0 +1,10 @@
+name: weather_delay_shiny
+title:
+username:
+account: yizhe-qu
+server: shinyapps.io
+hostUrl: https://api.shinyapps.io/v1
+appId: 911574
+bundleId: 2063045
+url: https://yizhe-qu.shinyapps.io/weather_delay_shiny/
+when: 1557123418.8849
