@@ -13,7 +13,7 @@
 ## Hadoop - Big Data
   - [Hadoop Workshop](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Hadoop%20Workshop): Practiced various hands-on exercises in Hadoop (e.g. HDFS, Hive, MapReduce, Spark, and Sqoop).
 
-## Python and Travis CI - Software Engineering
+## Python and Travis CI - Software
   - [Building Python Packages and Unit Testing](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Building%20Python%20packages%20and%20Unit%20Testing): Developed a Python package for calculating areas of different shapes based on user inputs of dimensions. Validated the performance of the package through unit testing, and further conducted continuous intergration testing with Travis CI.  
   
   
