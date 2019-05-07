@@ -2,7 +2,7 @@
 
 - [City of Kelowna - Cutural Data Capstone Project]: Analyzed the City of Kelowna's survey responses to the city's cutural facet. Performed data cleaning, classification, sentiment analysis, topic modelling on those text data, as well as developed a web-based multi-functional dashboard for visualizatio and reporting.   
 
-- [Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential supervised learning algorithms and conducted their Python implementations to help a fictitious charity organization, CharityML, to predict potential donors based on multiple features. Compared model performances and further improved the chosen model through parameter tuning technique.
+- [Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential supervised learning algorithms and conducted their implementations to help a fictitious charity organization, CharityML, to predict potential donors based on multiple features. Compared model performances and improved the chosen model through parameter tuning technique.
 	
 - [Python ML Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Python%20ML%20Micro%20Projects): Various micro projects involving Python implementations of different machine learning algorithms (e.g. linear regression, logistic regression, k-nearest neighbors, support vector machines, random forests, and building of a recommendation system).  
 	
