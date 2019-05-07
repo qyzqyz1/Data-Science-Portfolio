@@ -1,7 +1,7 @@
 # Data-Science-Portfolio - Yizhe(Tom) Qu
 Repository containing portfolio of my personal data science projects for academic, self-learning, and hobby purposes. 
 
-The projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
+The projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and they were accomplished using the most in demand programming language (Python and R) and Tools for data science.  
 
 _Note: Data used in the projects is for demonstration purpose only._
 
