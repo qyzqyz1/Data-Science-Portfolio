@@ -1,4 +1,4 @@
-# Data Analysis and Visualization Projects in R
+## Data Analysis and Visualization Projects in R
 
 - [Storytelling for U.S. Flights Data (R Shiny)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Data%20Analysis%20and%20Visualization/Storytelling%20(R%20Shiny)%20-%20Air%20Flights%20Data): Self-developed an interesting topic of finding the cities with terrible weather using the 2008 American Airlines dataset for public storytelling and presentation purpose. In addition, an interactive **R Shiny app** was built and can be viewed here: https://yizhe-qu.shinyapps.io/weather_delay_shiny/.
 	
