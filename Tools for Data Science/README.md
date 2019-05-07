@@ -6,6 +6,9 @@
   - [Market Sales in Europe](https://public.tableau.com/profile/yizhe.qu#!/vizhome/CustomerSalesinEurope_0/Dashboard): My second Tableau practice project, where I developed an interactive dashboard for users to analyze customer market sales in Euorpe by geographical locations and year.  
 
   - [Bank Balance Customer Segmentation in U.K.](https://public.tableau.com/profile/yizhe.qu#!/vizhome/BankBalanceSegmentationinU_K_/Storyline?publish=yes): A more advanced dashboard demonstrating the customer segmentation of bank balance in the United Kingdom. The analysis is broken down respectively into distributions by country, balance, age, gender, and job classification. 
+
+- ## Apache Spark - *Streaming Data*
+	- [Data Streaming with Spark](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Data%20Streaming%20with%20Pyspark): Wrote Spark programs in Python to read and perform operations on streaming data, after which SQL queries were further written to extract information of interest.
   
 - ## Microsoft Azure - *Machine Learning*
   - [Building a Predictive Model with Microsoft Azure](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Machine%20Learning%20with%20Microsoft%20Azure): Experienced in manipulating Azure Machine Learning Studio to build a predictive model on the 2016-17 NBA Player Status dataset.
