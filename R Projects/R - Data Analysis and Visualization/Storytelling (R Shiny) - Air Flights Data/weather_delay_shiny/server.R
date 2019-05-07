@@ -2,6 +2,7 @@ library(shiny)
 library(leaflet)
 library(htmltools)
 library(ggplot2)
+library(plotly)
 
 air <- read.csv("air_new.csv")
 source("airports.R")
@@ -48,7 +49,8 @@ function(input,output, session){
       
       top_5 <- head(top_10[order(top_10$mean_delay, decreasing = TRUE),], 5)
       top_5 <- top_5[c(1,2,3,4,10,11)]
-      
+      colnames(top_5)[5] <- "total_delayed_flights"
+      colnames(top_5)[6] <- "mean_delay_minutes"
       # Create a DataTable showing the top 5 most weather delayed airports
       output$table <- renderDataTable(
         top_5, 
@@ -160,11 +162,9 @@ function(input,output, session){
     map
     
 })
-
     
-  
     # Create barplot to summarize worst weahter-delayed airports in a month
-    output$bar_plot <- renderPlot({
+      output$bar_plot <- renderPlot({
       month <- as.numeric(input$user_month2)
       # Compute the weather dealyed frequency 
       counts <- list()
@@ -223,6 +223,69 @@ function(input,output, session){
       
     }
       )
-    
+    # Create an animated plotly line chart
+    output$plot <- renderPlotly({
+      month <- as.numeric(input$user_month2)
+      
+      date_df <- air[c(4,5,6)]
+      month_df <- subset(date_df, Month==month)
+      day_df <- aggregate(month_df, by=list(month_df$DayofMonth), mean)
+      day_df$WeatherDelay <- round(day_df$WeatherDelay,2)
+      
+      accumulate_by <- function(dat, var) {
+        var <- lazyeval::f_eval(var, dat)
+        lvls <- plotly:::getLevels(var)
+        dats <- lapply(seq_along(lvls), function(x) {
+          cbind(dat[var %in% lvls[seq(1, x)], ], frame = lvls[[x]])
+        })
+        dplyr::bind_rows(dats)
+      }
+      
+      d <- day_df %>%
+        accumulate_by(~DayofMonth)
+      
+      p <- d %>%
+        plot_ly(
+          x = ~DayofMonth, 
+          y = ~WeatherDelay,
+          #split = ~city,
+          frame = ~frame,
+          type = 'scatter',
+          mode = 'lines+markers', 
+          marker = list(size = 10,
+                        color = 'rgba(255, 182, 193, .9)',
+                        line = list(color = 'rgba(152, 0, 0, .8)',
+                                    width = 2)),
+          text = ~paste("Day: ", DayofMonth, "<br>Mean Delay: ", WeatherDelay), 
+          line = list(simplyfy = F, color='rgba(0,255,0)'),
+          hoverinfo = 'text'
+        ) %>% 
+        layout(
+          xaxis = list(
+            title = "Day in Month",
+            zeroline = F,
+            showgrid = F
+          ),
+          yaxis = list(
+            title = "Mean Weather Delay",
+            zeroline = F
+          )
+        ) %>% 
+        animation_opts(
+          frame = 100, 
+          transition = 0, 
+          redraw = FALSE
+        ) %>%
+        animation_slider(
+          hide = T
+        ) %>%
+        animation_button(
+          x = 1, xanchor = "right", y = 0, yanchor = "bottom"
+        )
+      
+      p
+  
+      
+    })
 }
 

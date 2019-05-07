@@ -1,9 +1,10 @@
 library(shiny)
 library(leaflet)
 library(htmltools)
+library(plotly)
 
 ui <- fluidPage(
-  titlePanel("Storytelling Presentations"),
+  titlePanel("Storytelling - 2008 U.S. Airline Dataset"),
   
   tabsetPanel(
     tabPanel("Single Day - Weather Condition",
@@ -30,19 +31,30 @@ ui <- fluidPage(
     sidebarLayout(
     sidebarPanel(
     img(src = "worst.jpg", height = 72, width = 220),
-    helpText("Select a particular month to visualize the top 8 most weather-delayed
-             U.S. airports for the month"),
-    selectInput("user_month2", label="Select a month",
+    helpText("Select a particular month to visualize the top weather-delayed
+              airports or the change of delay conditions for that month"),
+    selectInput("user_month2", label=h4("Select a month"),
                 choices = list("January" = 1, "Feburary" = 2,
                               "March" = 3,"April" = 4,
                               "May" = 5,"June" = 6,
                               "July" = 7,"August" = 8,
                               "September" = 9,"October" = 10,
-                              "November" = 11,"December" = 12), selected = 12)
+                              "November" = 11,"December" = 12), selected = 12),
+    radioButtons("graph_choice", label=h4("Select a plot to display"),
+                 choices = list("Top Weather-Delayed Airports" = 1, 
+                                "Change in Delay Conditions (Animated)" = 2),
+                                selected = 1)
     ),
     mainPanel(
-      h4("Top 8 Weather-Delayed Airports for the Month", align='center'),
-      plotOutput("bar_plot")
+      conditionalPanel(
+        condition = "input.graph_choice == 1", 
+        h4("Top 8 Weather-Delayed Airports for the Month", align='center'),
+        plotOutput("bar_plot")),
+      
+      conditionalPanel(
+        condition = "input.graph_choice == 2", 
+        h4("Change of Mean Weather Delays for the Month", align='center'),
+        plotlyOutput("plot"))
     )
     )
     )
