@@ -3,7 +3,7 @@ Repository containing portfolio of my personal data science projects for academi
 
 The projects were completed along [my journey to data scientist](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Journey%20to%20Data%20Scientist), and most of them were presented in the form of IPython Notebooks and R markdown files.
 
-_Note: Data used in the projects is for demonstration purposes only._
+_Note: Data used in the projects is for demonstration purpose only._
 
 ## Contents
 
