@@ -39,7 +39,8 @@ _Note: Data used in the projects is for demonstration purpose only._
 	- [Apache Spark Python Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Apache%20Spark%20ML%20Micro%20Projects): Various micro projects involving Apache Spark Python implementations of different machine learning algorithms (e.g. linear regression, logistic regression, random forests, k-means clustering, and natural language processing).  
 	
 	- [Deep Learning Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Deep%20Learning%20Micro%20Projects): Various micro projects involving Python implementations of different deep learning/ neural network topics (e.g. multi-layer perceptrons, convolutional neural network, recurrent neural network, and training model through stochastic gradient descent and regularization). 
-	
+	- [Natural Language Processing Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects): Various micro projects involving Python implementations of different natural language processing techniques (e.g. python text basics, NLP basics, parts of speech, text classification, sentiment analysis, and topic modelling).
+
 - #### R
 	- [Supervised Learning Tasks in R](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/R%20Projects/R%20-%20Machine%20Learning/Supervised%20Learning%20Tasks): Various tasks involving implementations of supervised learning models in R (e.g. LDA, QDA, k-nearest neighbours, association rule mining, PCA, logistic regression, and neural network).  
 	
@@ -49,10 +50,6 @@ _Note: Data used in the projects is for demonstration purpose only._
 
 - #### Microsoft Azure
 	- [Building a Predictive Model with Microsoft Azure](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Machine%20Learning%20with%20Microsoft%20Azure): Experienced in manipulating Azure Machine Learning Studio to build a predictive model on the 2016-17 NBA Player Status dataset.
-
-### Natural Language Processing
-- #### Python
-	- [Natural Language Processing Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects): Various micro projects involving Python implementations of different natural language processing techniques (e.g. python text basics, NLP basics, parts of speech, text classification, sentiment analysis, and topic modelling).
 
 	
 ### Other Data Science Skills
