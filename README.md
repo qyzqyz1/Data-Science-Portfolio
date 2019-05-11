@@ -9,6 +9,8 @@ _Note: Data used in the projects is for demonstration purpose only._
 
 ### Data Analysis and Visualisation
 - #### Python
+	- [City of Kelowna - Culture Analysis Capstone Project](https://github.com/vaghulb1992/kelowna_culture_analysis): Implemented machine learning models and visualizations to analyze and discover trends and patterns in data obtained by the City of Kelowna (municipal government) on how the community, organizations and various other stakeholders feel about the cultural facet of Kelowna. A Dash dashboard to analyze the cultural makeup of the city of Kelowna can be viewed here: https://kelownaculture.herokuapp.com/
+	
 	- [Vancouver Crime Data Analysis (Dash)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Dash)): Developed a web-based user-interactive dashboard using Plotly Dash showing the crime patterns in terms of geo-location and time. The **Dash dashboard** can be viewed here: https://vancouver-crime-dashboard-app.herokuapp.com/.
 	
 	- [Vancouver Crime Data Analysis (Plotly)](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Data%20Analysis%20and%20Visualization/Vancouver%20Crime%20Analysis%20(Plotly)): Constructed different visualizations in order to appropriately address the questions posed to the Vancouver Crime dataset. The **Plotly presentation slides** with interactive graphs can be viewed here: https://plot.ly/~tomqu/11/analysis-of-crimes-in-vancouver/.
@@ -50,8 +52,6 @@ _Note: Data used in the projects is for demonstration purpose only._
 
 ### Natural Language Processing
 - #### Python
-	- [City of Kelowna - Cutural Data Text Analysis]: Analyzed the City of Kelowna's survey responses to the city's cutural facet. Performed data cleaning, classification, sentiment analysis, topic modelling on those text data, as well as developed a web-based multi-functional dashboard for visualizatio and reporting.   
-
 	- [Natural Language Processing Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Natural%20Language%20Processing%20Micro%20Projects): Various micro projects involving Python implementations of different natural language processing techniques (e.g. python text basics, NLP basics, parts of speech, text classification, sentiment analysis, and topic modelling).
 
 	
