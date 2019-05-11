@@ -6,7 +6,7 @@ To be part of the movement, I have been consistently honing my data science skil
 
   - _**2018/02 - 2018/03**_: [Data Science and Big Data Analytics - MITxPRO](https://mitxpro.mit.edu/courses/course-v1:MITxPRO+DSx+3T2018/about?utm_medium=website): First exposure to data science, learnt different data science techniques and concepts. [Certificate](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/MITxPRO_Data_Science_and_Big_Data_Analytics.pdf)
 
-  - _**2018/05**_: Admitted by the Master of Data Science program at the University of British Columbia (UBC)
+  - _**2018/05**_: Admitted by the [Master of Data Science](https://masterdatascience.ubc.ca/) program at the University of British Columbia (UBC)
 
   - _**2018/06 - 2018/07**_: [Python for Data Science and Machine Learning Bootcamp](https://www.udemy.com/python-for-data-science-and-machine-learning-bootcamp/): Exercised data analysis and machine learning skills with Python through this online bootcamp. [Certificate](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/Udemy_Python_Bootcamp.pdf)
 
@@ -14,7 +14,7 @@ To be part of the movement, I have been consistently honing my data science skil
 
   - _**2018/08**_: [Data Science and Machine Learning Bootcamp with R](https://www.udemy.com/course/data-science-and-machine-learning-bootcamp-with-r/): Exercised data analysis and machine learning skills with R through this online bootcamp. [Certificate](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/Udemy_R_Bootcamp.pdf)
 
-  - _**2018/09**_: Start of the Master of Data Science Program (at UBC)
+  - _**2018/09**_: Start of the [Master of Data Science](https://masterdatascience.ubc.ca/) Program (at UBC)
 
   - _**2019/02**_: [Tableau 10 A-Z: Hands-On Tableau Training For Data Science](https://www.udemy.com/tableau10/): Gained hands-on experience in producing various data visualizations in Tableau 10 to discover patterns in data. [Certificate](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/Udemy_Tableau_Training.pdf)
 
@@ -26,7 +26,7 @@ To be part of the movement, I have been consistently honing my data science skil
 
   - _**2019/05 - 2019/06**_: Capstone Project - City of Kelowna: Cultural Data Analysis
 
-  - _**2019/06**_: End of the Master of Data Science Program (at UBC)
+  - _**2019/06**_: End of the [Master of Data Science](https://masterdatascience.ubc.ca/) Program (at UBC)
 
 
 
