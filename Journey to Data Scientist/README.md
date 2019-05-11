@@ -24,7 +24,7 @@ To be part of the movement, I have been consistently honing my data science skil
 
   - _**2019/04**_: [NLP - Natural Language Processing with Python](https://www.udemy.com/nlp-natural-language-processing-with-python/): Learnt  how to use machine learning, Spacy, NLTK, SciKit-Learn, deep learning, and more to conduct Natural Language Processing. [Certificate](https://github.com/qyzqyz1/Data-Science-Portfolio/blob/master/Journey%20to%20Data%20Scientist/Learning%20Certificates/Udemy_NLP_with_Python.pdf)
 
-  - _**2019/05 - 2019/06**_: Capstone Project - City of Kelowna: Cultural Data Analysis
+  - _**2019/05 - 2019/06**_: Capstone Project - City of Kelowna's Cultural Data Analysis: Facilitated the development of [City of Kelowna's next Cultural Plan](https://www.kelowna.ca/our-community/arts-culture-heritage/cultural-plan) by providing useful insights obtained from analysis of text survey response data.
 
   - _**2019/06**_: End of the [Master of Data Science](https://masterdatascience.ubc.ca/) Program (at UBC)
 
