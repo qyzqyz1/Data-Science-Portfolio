@@ -53,7 +53,7 @@ _Note: Data used in the projects is for demonstration purpose only._
 
 	
 ### Other Data Science Skills
-- #### Spark in Python
+- #### Apache Spark in Python
 	- [Data Streaming with Spark](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Tools%20for%20Data%20Science/Data%20Streaming%20with%20Pyspark): Wrote Spark programs in Python to read and perform operations on streaming data, after which SQL queries were further written to extract information of interest.
 
 - #### Hadoop
