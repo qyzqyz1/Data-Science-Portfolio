@@ -32,6 +32,8 @@ _Note: Data used in the projects is for demonstration purpose only._
 
 ### Machine Learning
 - #### Python
+	- [Capstone Project - City of Kelowna: Culture Analysis](https://github.com/ubco-mds-2018-labs/data-599-capstone-project-city-of-kelowna-cultural-data): Analyzed the City of Kelowna's survey responses to the city's cutural facet. Performed Natural Language Processing in addition to several other machine learning techniques (both supervised and unsupervised) on those text data.   
+	
 	- [Finding Donors for CharityML](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Supervised%20-%20Finding%20Donors%20for%20CharityML): Identified potential supervised learning algorithms and conducted their Python implementations to help a fictitious charity organization, CharityML, to predict potential donors based on multiple features. Compared model performances and further improved the chosen model through parameter tuning technique.
 	
 	- [Python ML Micro Projects](https://github.com/qyzqyz1/Data-Science-Portfolio/tree/master/Python%20Projects/Python%20-%20Machine%20Learning/Python%20ML%20Micro%20Projects): Various micro projects involving Python implementations of different machine learning algorithms (e.g. linear regression, logistic regression, k-nearest neighbors, support vector machines, random forests, and building of a recommendation system).  
